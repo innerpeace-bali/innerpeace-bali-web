@@ -1,0 +1,334 @@
+<!-- FILE: residence/index.html — place inside the `residence/` folder at site root -->
+<!-- UPDATE NOTE: merged version — keeps the EN<->ID language switcher + hreflang tags added earlier,
+     PLUS the new photo updates (gate-sign hero/og:image, 4-photo mini-gallery, Mini-fridge facility). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>INNerpeace Residence | Monthly Rooms for Professionals — Celuk, Gianyar</title>
+<meta name="description" content="INNerpeace Residence — 8 monthly rooms for working professionals in Celuk, Sukawati, Gianyar, Bali. AC, ensuite bathroom, parking, King Koil bed. Less Noise, More Peace.">
+<meta name="keywords" content="INNerpeace Residence, kos bulanan Gianyar, monthly residence Bali, kos profesional Sukawati, kos AC kamar mandi dalam Celuk">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.innerpeacebali.com/residence/">
+<link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/residence/">
+<link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/residence/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INNerpeace Residence">
+<meta property="og:title" content="INNerpeace Residence | Less Noise, More Peace">
+<meta property="og:description" content="8 monthly rooms for working professionals in Celuk, Sukawati, Gianyar, Bali.">
+<meta property="og:image" content="https://www.innerpeacebali.com/assets/residence/residence-gate-sign-1.webp">
+<meta property="og:url" content="https://www.innerpeacebali.com/residence/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="INNerpeace Residence | Less Noise, More Peace">
+<meta name="twitter:description" content="8 monthly rooms for working professionals in Celuk, Sukawati, Gianyar, Bali.">
+
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon-180.png">
+<meta name="theme-color" content="#4A2F22">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F3E8D9; --cocoa:#4A2F22; --cocoa-soft:#6B4A33; --marble:#FAF7F2;
+    --gold:#B8924F; --gold-soft:#D8BD86; --sage:#6B7F5E; --line: rgba(74,47,34,0.14);
+    --display: "Playfair Display", Georgia, serif;
+    --display-hero: "Cormorant Garamond", Georgia, serif;
+    --body: "Work Sans", Arial, sans-serif;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ margin:0; background:var(--cream); color:var(--cocoa); font-family:var(--body); line-height:1.65; -webkit-font-smoothing:antialiased; }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 28px; }
+  h1,h2,h3{ font-family:var(--display); font-weight:600; margin:0; color:var(--cocoa); letter-spacing:-0.01em; }
+  h1{ font-size:clamp(2.3rem,5vw,4rem); line-height:1.1; }
+  h2{ font-size:clamp(1.7rem,3vw,2.5rem); line-height:1.18; }
+  p{ margin:0; }
+  .lede{ color:var(--cocoa-soft); font-size:1.05rem; max-width:48ch; }
+  .eyebrow{ display:inline-flex; align-items:center; gap:10px; font-family:var(--display); font-style:italic; font-size:0.95rem; color:var(--gold); font-weight:600; }
+  .eyebrow::before{ content:""; width:22px; height:1px; background:var(--gold); display:inline-block; }
+
+  .site-header{ position:sticky; top:0; z-index:50; background:rgba(243,232,217,0.92); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); }
+  .nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 28px; max-width:1180px; margin:0 auto; gap:18px; }
+  .brand{ display:flex; align-items:center; gap:12px; }
+  .brand img{ width:46px; height:auto; border-radius:10px; }
+  .brand-text{ display:flex; flex-direction:column; line-height:1.15; }
+  .brand-text .back{ font-size:0.7rem; color:var(--cocoa-soft); }
+  .brand-text .name{ font-family:var(--display); font-style:italic; font-weight:600; font-size:1.1rem; }
+  .nav-links{ display:flex; gap:28px; list-style:none; margin:0; padding:0; }
+  .nav-links a{ font-size:0.88rem; font-weight:500; color:var(--cocoa-soft); }
+  .nav-links a:hover, .nav-links a.active{ color:var(--cocoa); }
+  .nav-right{ display:flex; align-items:center; gap:16px; }
+  .lang-pill{ display:flex; border:1px solid var(--cocoa); border-radius:30px; overflow:hidden; font-size:0.76rem; font-weight:600; }
+  .lang-pill span{ padding:5px 12px; display:inline-block; }
+  .lang-pill .on{ background:var(--cocoa); color:var(--marble); }
+  .lang-switch-mobile{ display:none; }
+  .nav-toggle{ display:none; background:none; border:none; cursor:pointer; width:26px; height:18px; position:relative; padding:0; }
+  .nav-toggle span{ position:absolute; left:0; right:0; height:2px; background:var(--cocoa); transition:all .25s ease; }
+  .nav-toggle span:nth-child(1){ top:0; } .nav-toggle span:nth-child(2){ top:8px; } .nav-toggle span:nth-child(3){ top:16px; }
+  .nav-toggle.open span:nth-child(1){ transform:translateY(8px) rotate(45deg); }
+  .nav-toggle.open span:nth-child(2){ opacity:0; }
+  .nav-toggle.open span:nth-child(3){ transform:translateY(-8px) rotate(-45deg); }
+
+  .hero{ position:relative; min-height:78vh; display:flex; align-items:center; overflow:hidden; }
+  .hero-bg{ position:absolute; inset:0; background-image:url('../assets/residence/residence-gate-sign-1.webp'); background-size:cover; background-position:center; }
+  .hero-bg::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(31,20,14,0.55) 0%, rgba(31,20,14,0.35) 45%, rgba(31,20,14,0.8) 100%); }
+  .hero-inner{ position:relative; z-index:2; color:var(--marble); text-align:center; width:100%; padding:60px 28px; }
+  .hero-inner .eyebrow{ color:var(--gold-soft); justify-content:center; }
+  .hero-inner h1{ color:var(--marble); margin-top:16px; font-family:var(--display-hero); font-weight:600; font-size:clamp(2.6rem,6vw,4.4rem); }
+  .hero-inner .lede{ color:rgba(250,247,242,0.86); margin:18px auto 0; text-align:center; font-size:1.1rem; }
+  .hero-ctas{ display:flex; gap:16px; justify-content:center; margin-top:34px; flex-wrap:wrap; }
+  .btn{ display:inline-flex; align-items:center; gap:10px; padding:14px 28px; font-family:var(--body); font-weight:600; font-size:0.9rem; border-radius:2px; border:1px solid transparent; cursor:pointer; transition:all .2s ease; }
+  .btn-gold{ background:var(--gold); color:var(--marble); }
+  .btn-gold:hover{ background:var(--gold-soft); }
+  .btn-outline{ border-color:rgba(250,247,242,0.55); color:var(--marble); }
+  .btn-outline:hover{ background:var(--marble); color:var(--cocoa); }
+
+  .reveal{ opacity:0; transform:translateY(22px); transition:opacity 1.2s ease-out, transform 1.2s ease-out; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+
+  section{ padding:80px 0; }
+  .section-tight{ padding:56px 0; }
+  .section-head{ text-align:center; margin-bottom:46px; }
+
+  .facts-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+  .fact-cell{ background:var(--marble); padding:26px; text-align:center; }
+  .fact-num{ font-family:var(--display); font-size:1.7rem; color:var(--gold); }
+  .fact-label{ font-size:0.8rem; color:var(--cocoa-soft); margin-top:4px; }
+
+  /* room showcase */
+  .room-showcase{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:1px; background:var(--line); border:1px solid var(--line); }
+  .room-showcase img{ width:100%; height:100%; object-fit:cover; min-height:340px; }
+  .room-info{ background:var(--marble); padding:36px; }
+  .room-info .price{ font-family:var(--display); font-size:1.6rem; color:var(--gold); margin-bottom:4px; }
+  .room-info .price span{ font-size:0.85rem; color:var(--cocoa-soft); font-family:var(--body); }
+  .facil-list{ list-style:none; margin:18px 0 22px; padding:0; display:flex; flex-direction:column; gap:9px; }
+  .facil-list li{ font-size:0.92rem; color:var(--cocoa-soft); }
+  .facil-list li::before{ content:"— "; color:var(--gold); }
+  .mini-gallery{ display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:18px; }
+  .mini-gallery img{ aspect-ratio:1/1; object-fit:cover; border-radius:2px; }
+
+  /* why grid */
+  .why-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:36px; }
+  .why-card{ text-align:center; }
+  .why-card svg{ width:42px; height:42px; margin:0 auto 16px; color:var(--gold); }
+  .why-card h3{ font-size:1.02rem; margin-bottom:8px; }
+  .why-card p{ font-size:0.88rem; color:var(--cocoa-soft); }
+
+  .cta-band{ background:linear-gradient(160deg, var(--cocoa) 0%, var(--cocoa-soft) 100%); color:var(--marble); text-align:center; }
+  .cta-band .lede{ color:rgba(250,247,242,0.8); margin:18px auto 30px; }
+
+  footer{ background:var(--cocoa); color:rgba(250,247,242,0.7); }
+  .footer-grid{ display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:40px; padding-top:50px; padding-bottom:30px; border-bottom:1px solid rgba(250,247,242,0.15); }
+  .footer-grid h4{ color:var(--marble); font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 14px; }
+  .footer-grid p{ font-size:0.85rem; }
+  .footer-grid a{ font-size:0.88rem; }
+  .footer-bottom{ display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:22px; padding-bottom:22px; font-size:0.78rem; gap:6px; }
+  .footer-bottom .powered-by{ font-size:0.74rem; opacity:0.7; }
+  .footer-bottom .powered-by a{ color:var(--gold-soft); text-decoration:underline; }
+
+  .sticky-bottom-nav{ display:none; position:fixed; bottom:0; left:0; right:0; z-index:60; background:var(--marble); border-top:1px solid var(--line); box-shadow:0 -4px 16px rgba(74,47,34,0.14); }
+  .sbn-btn{ flex:1; text-align:center; padding:15px 0; font-family:var(--body); font-weight:600; font-size:0.9rem; }
+  .sbn-wa{ background:var(--gold); color:var(--marble); }
+  .sbn-contact{ background:var(--cocoa); color:var(--marble); }
+
+  @media (max-width:900px){
+    .facts-grid{ grid-template-columns:repeat(2,1fr); }
+    .room-showcase{ grid-template-columns:1fr; }
+    .room-showcase img{ min-height:240px; }
+    .why-grid{ grid-template-columns:repeat(2,1fr); gap:28px; }
+    .footer-grid{ grid-template-columns:1fr; }
+    .nav-toggle{ display:block; }
+    .nav-right .lang-pill{ display:none; }
+    .lang-switch-mobile{ display:block; }
+    .nav-links{ position:absolute; top:100%; left:0; right:0; background:var(--cream); flex-direction:column; align-items:flex-start; padding:22px 28px; gap:18px; border-bottom:1px solid var(--line); display:none; }
+    .nav-links.open{ display:flex; }
+    .sticky-bottom-nav{ display:flex; }
+    body{ padding-bottom:56px; }
+  }
+  @media (prefers-reduced-motion:reduce){ .reveal{ opacity:1; transform:none; transition:none; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../index.html" class="brand">
+      <img src="../assets/logo-residence.jpg" alt="INNerpeace Residence logo">
+      <div class="brand-text"><span class="back">← INNerpeace Bali</span><span class="name">INNerpeace Residence</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#room">Room &amp; Facilities</a></li>
+      <li><a href="#why">Why Residence</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="lang-switch-mobile"><a href="../id/residence/index.html">Bahasa Indonesia</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-pill"><span class="on">EN</span><a href="../id/residence/index.html"><span>ID</span></a></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="eyebrow">Celuk, Sukawati — Gianyar, Bali</span>
+    <h1>Monthly Rooms for<br>Working Professionals.</h1>
+    <p class="lede" style="margin-left:auto;margin-right:auto;">8 quiet, secure rooms in Celuk — built for people who work hard and need a calm place to come home to. Less Noise, More Peace.</p>
+    <div class="hero-ctas">
+      <a href="#room" class="btn btn-gold">See Room &amp; Facilities</a>
+      <a href="contact.html" class="btn btn-outline">WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight reveal">
+  <div class="wrap">
+    <div class="facts-grid">
+      <div class="fact-cell"><div class="fact-num">8</div><div class="fact-label">Units</div></div>
+      <div class="fact-cell"><div class="fact-num">Rp 3jt</div><div class="fact-label">Per Month</div></div>
+      <div class="fact-cell"><div class="fact-num">5.0</div><div class="fact-label">Google Rating</div></div>
+      <div class="fact-cell"><div class="fact-num">1</div><div class="fact-label">Room Type</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="room">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="justify-content:center">Room &amp; Facilities</span>
+      <h2 style="margin-top:14px">One room type, fully equipped.</h2>
+    </div>
+    <div class="room-showcase reveal">
+      <img src="../assets/residence/residence-bedroom-1.webp" alt="INNerpeace Residence room">
+      <div class="room-info">
+        <div class="price"><span id="res-price-amount">Rp 3,000,000</span> <span id="res-price-unit">/ month</span></div>
+        <p class="lede" style="margin-top:6px;">8 identical rooms — same price, same facilities.</p>
+        <ul class="facil-list" id="res-facilities">
+          <li>Air conditioning</li>
+          <li>Ensuite bathroom</li>
+          <li>King Koil mattress</li>
+          <li>Built-in wardrobe</li>
+          <li>Private small terrace</li>
+          <li>Mini-fridge</li>
+          <li>Free WiFi</li>
+          <li>Car parking on-site</li>
+        </ul>
+        <div class="mini-gallery">
+          <img src="../assets/residence/residence-wardrobe-1.webp" alt="Built-in wardrobe">
+          <img src="../assets/residence/residence-exterior-night-1.webp" alt="Residence exterior at night">
+          <img src="../assets/residence/residence-bathroom-1.webp" alt="Residence ensuite bathroom">
+          <img src="../assets/residence/residence-terrace-1.webp" alt="Residence private terrace">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="justify-content:center">Why INNerpeace Residence</span>
+      <h2 style="margin-top:14px">Built around a real work day.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 9C8 4.5 16 4.5 21 9"/><path d="M6.5 12.5C9.8 9.7 14.2 9.7 17.5 12.5"/><path d="M10 16C11.3 14.9 12.7 14.9 14 16"/><circle cx="12" cy="19" r="1" fill="currentColor"/></svg>
+        <h3>WFH-Ready</h3><p>Stable WiFi for calls and deadlines.</p>
+      </div>
+      <div class="why-card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 3L19 6V11C19 16 15.5 19.5 12 21C8.5 19.5 5 16 5 11V6L12 3Z"/></svg>
+        <h3>Quiet &amp; Secure</h3><p>A calm place to recharge after work.</p>
+      </div>
+      <div class="why-card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="11" width="18" height="6" rx="1"/><circle cx="7" cy="17" r="1.4" fill="currentColor"/><circle cx="17" cy="17" r="1.4" fill="currentColor"/></svg>
+        <h3>On-Site Parking</h3><p>No hunting for a spot every night.</p>
+      </div>
+      <div class="why-card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="3.4"/><path d="M5 20C5 16.5 8 14 12 14C16 14 19 16.5 19 20"/></svg>
+        <h3>Same Owner as Villa</h3><p>Part of the INNerpeace family.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band reveal">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--gold-soft); justify-content:center">Get in Touch</span>
+    <h2 style="margin-top:14px; color:var(--marble)">Ready to move in?</h2>
+    <p class="lede" style="margin-left:auto;margin-right:auto;">Message us to check current room availability.</p>
+    <a href="contact.html" class="btn btn-gold">Go to Contact</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand" style="margin-bottom:14px;"><img src="../assets/logo-residence.jpg" alt="INNerpeace Residence" style="width:42px;border-radius:9px;"></div>
+      <p style="max-width:32ch;">Monthly rooms for working professionals in Celuk, Sukawati — part of the INNerpeace family.</p>
+    </div>
+    <div>
+      <h4>Address</h4>
+      <p>Jl. Subak Mungkul No.3, Celuk,<br>Sukawati, Gianyar, Bali 80582</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="https://wa.me/6285190845076">WhatsApp: 0851-9084-5076</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 INNerpeace Residence.</span>
+    <span class="powered-by">Powered by <a href="https://anabhidev.netlify.app" target="_blank" rel="noopener">Anabhi Dev</a></span>
+  </div>
+</footer>
+
+<div class="sticky-bottom-nav">
+  <a href="https://wa.me/6285190845076" class="sbn-btn sbn-wa">WhatsApp</a>
+  <a href="contact.html" class="sbn-btn sbn-contact">Contact</a>
+</div>
+
+<script>
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function(){ navToggle.classList.toggle('open'); navLinks.classList.toggle('open'); });
+  document.querySelectorAll('#navLinks a').forEach(function(a){ a.addEventListener('click', function(){ navToggle.classList.remove('open'); navLinks.classList.remove('open'); }); });
+
+  document.querySelectorAll('.why-grid').forEach(function(group){
+    var items = group.querySelectorAll('.reveal');
+    items.forEach(function(item, i){ item.style.transitionDelay = (i * 100) + 'ms'; });
+  });
+
+  var els = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  els.forEach(function(el){ io.observe(el); });
+
+  // Load editable content from data/residence.json (set up via the CMS at /admin).
+  // If this fails, the static price/facilities text already in this HTML stays as-is.
+  fetch('../data/residence.json').then(function(r){ return r.json(); }).then(function(data){
+    function setText(id, text){
+      var el = document.getElementById(id);
+      if(el && text) el.textContent = text;
+    }
+    if(data.price){
+      setText('res-price-amount', data.price.amount);
+      setText('res-price-unit', data.price.unit);
+    }
+    if(data.facilities && data.facilities.length){
+      var el = document.getElementById('res-facilities');
+      if(el) el.innerHTML = data.facilities.map(function(i){ return '<li>' + i + '</li>'; }).join('');
+    }
+  }).catch(function(err){ console.warn('Could not load data/residence.json, showing static fallback content', err); });
+</script>
+
+</body>
+</html>

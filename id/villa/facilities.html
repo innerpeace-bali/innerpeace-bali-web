@@ -1,0 +1,339 @@
+<!-- FILE: id/villa/facilities.html — KETERANGAN: INI VERSI BAHASA INDONESIA (mirror dari villa/facilities.html versi EN) -->
+<!-- Taruh file ini di dalam folder id/villa/ (jadi: id/villa/facilities.html) -->
+<!-- Asset (gambar, favicon) & data/villa.json TIDAK diduplikasi — tetap ambil dari root, makanya path-nya pakai ../../ -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tipe &amp; Fasilitas Villa | INNerpeace Villa — Celuk, Gianyar</title>
+<meta name="description" content="Tipe &amp; fasilitas INNerpeace Villa — villa kolam renang privat atau bathtub semi-outdoor, dapur lengkap, AC, WiFi gratis, parkir, di Celuk, Sukawati, Gianyar.">
+<meta name="keywords" content="Fasilitas INNerpeace Villa, villa kolam renang Gianyar, villa bathtub Bali, fasilitas villa Celuk Sukawati">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.innerpeacebali.com/id/villa/facilities.html">
+<link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/villa/facilities.html">
+<link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/villa/facilities.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INNerpeace Villa">
+<meta property="og:title" content="Tipe &amp; Fasilitas Villa | INNerpeace Villa">
+<meta property="og:description" content="Villa kolam renang privat atau bathtub semi-outdoor, dapur lengkap, AC, WiFi gratis — di Celuk, Sukawati, Gianyar.">
+<meta property="og:image" content="https://www.innerpeacebali.com/assets/villa/villa-pool-exterior-1.webp">
+<meta property="og:url" content="https://www.innerpeacebali.com/id/villa/facilities.html">
+
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon-180.png">
+<meta name="theme-color" content="#4A2F22">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F3E8D9; --cocoa:#4A2F22; --cocoa-soft:#6B4A33; --marble:#FAF7F2;
+    --gold:#B8924F; --gold-soft:#D8BD86; --sage:#6B7F5E; --line: rgba(74,47,34,0.14);
+    --display: "Playfair Display", Georgia, serif;
+    --display-hero: "Cormorant Garamond", Georgia, serif;
+    --body: "Work Sans", Arial, sans-serif;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ margin:0; background:var(--cream); color:var(--cocoa); font-family:var(--body); line-height:1.65; -webkit-font-smoothing:antialiased; }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 28px; }
+  h1,h2,h3,h4{ font-family:var(--display); font-weight:600; margin:0; color:var(--cocoa); letter-spacing:-0.01em; }
+  h1{ font-size:clamp(2rem,3.6vw,2.8rem); }
+  h2{ font-size:clamp(1.7rem,3vw,2.5rem); line-height:1.18; }
+  p{ margin:0; }
+  .lede{ color:var(--cocoa-soft); font-size:1.05rem; max-width:48ch; }
+  .eyebrow{ display:inline-flex; align-items:center; gap:10px; font-family:var(--display); font-style:italic; font-size:0.95rem; color:var(--gold); font-weight:600; }
+  .eyebrow::before{ content:""; width:22px; height:1px; background:var(--gold); display:inline-block; }
+
+  .site-header{ position:sticky; top:0; z-index:50; background:rgba(243,232,217,0.92); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); }
+  .nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 28px; max-width:1180px; margin:0 auto; gap:18px; }
+  .brand{ display:flex; align-items:center; gap:12px; }
+  .brand img{ width:46px; height:auto; border-radius:10px; }
+  .brand-text{ display:flex; flex-direction:column; line-height:1.15; }
+  .brand-text .back{ font-size:0.7rem; color:var(--cocoa-soft); }
+  .brand-text .name{ font-family:var(--display); font-style:italic; font-weight:600; font-size:1.1rem; }
+  .nav-links{ display:flex; gap:28px; list-style:none; margin:0; padding:0; }
+  .nav-links a{ font-size:0.88rem; font-weight:500; color:var(--cocoa-soft); }
+  .nav-links a:hover, .nav-links a.active{ color:var(--cocoa); }
+  .nav-right{ display:flex; align-items:center; gap:16px; }
+  .lang-pill{ display:flex; border:1px solid var(--cocoa); border-radius:30px; overflow:hidden; font-size:0.76rem; font-weight:600; }
+  .lang-pill span{ padding:5px 12px; display:inline-block; }
+  .lang-pill .on{ background:var(--cocoa); color:var(--marble); }
+  .lang-switch-mobile{ display:none; }
+  .nav-toggle{ display:none; background:none; border:none; cursor:pointer; width:26px; height:18px; position:relative; padding:0; }
+  .nav-toggle span{ position:absolute; left:0; right:0; height:2px; background:var(--cocoa); transition:all .25s ease; }
+  .nav-toggle span:nth-child(1){ top:0; } .nav-toggle span:nth-child(2){ top:8px; } .nav-toggle span:nth-child(3){ top:16px; }
+  .nav-toggle.open span:nth-child(1){ transform:translateY(8px) rotate(45deg); }
+  .nav-toggle.open span:nth-child(2){ opacity:0; }
+  .nav-toggle.open span:nth-child(3){ transform:translateY(-8px) rotate(-45deg); }
+
+  .page-header{ background:var(--cocoa); color:var(--marble); padding:56px 0 48px; }
+  .page-header .lede{ color:rgba(250,247,242,0.78); margin-top:12px; }
+  .crumb{ font-size:0.8rem; color:rgba(250,247,242,0.55); margin-bottom:14px; display:block; }
+
+  .reveal{ opacity:0; transform:translateY(22px); transition:opacity 1.2s ease-out, transform 1.2s ease-out; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+
+  section{ padding:70px 0; }
+  .section-head{ text-align:center; margin-bottom:42px; }
+
+  /* villa type detail cards */
+  .type-detail{ display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line); border:1px solid var(--line); margin-bottom:24px; }
+  .type-detail img{ width:100%; height:100%; object-fit:cover; min-height:320px; }
+  .type-detail-info{ background:var(--marble); padding:34px; }
+  .type-detail-info .type-units{ font-size:0.8rem; color:var(--gold); font-weight:600; margin-bottom:8px; }
+  .type-detail-info h3{ margin-bottom:14px; }
+  .type-facil-list{ list-style:none; margin:0 0 22px; padding:0; display:flex; flex-direction:column; gap:9px; }
+  .type-facil-list li{ font-size:0.92rem; color:var(--cocoa-soft); display:flex; align-items:center; gap:10px; }
+  .type-facil-list li::before{ content:"—"; color:var(--gold); }
+
+  /* shared / exclusive facilities */
+  .facil-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+  .facil-card{ background:var(--marble); padding:26px 20px; text-align:left; }
+  .facil-card svg{ width:24px; height:24px; color:var(--gold); margin-bottom:12px; }
+  .facil-card h4{ font-size:0.92rem; margin-bottom:5px; }
+  .facil-card p{ font-size:0.82rem; color:var(--cocoa-soft); }
+  .facil-tag{ display:inline-block; font-size:0.68rem; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:var(--gold); margin-top:6px; }
+
+  .cta-band{ background:linear-gradient(160deg, var(--cocoa) 0%, var(--cocoa-soft) 100%); color:var(--marble); text-align:center; }
+  .cta-band .lede{ color:rgba(250,247,242,0.8); margin:18px auto 30px; }
+  .btn{ display:inline-flex; align-items:center; gap:10px; padding:14px 28px; font-family:var(--body); font-weight:600; font-size:0.9rem; border-radius:2px; border:1px solid transparent; cursor:pointer; transition:all .2s ease; }
+  .btn-gold{ background:var(--gold); color:var(--marble); }
+  .btn-gold:hover{ background:var(--gold-soft); }
+
+  footer{ background:var(--cocoa); color:rgba(250,247,242,0.7); }
+  .footer-grid{ display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:40px; padding-top:50px; padding-bottom:30px; border-bottom:1px solid rgba(250,247,242,0.15); }
+  .footer-grid h4{ color:var(--marble); font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 14px; }
+  .footer-grid p{ font-size:0.85rem; }
+  .footer-grid a{ font-size:0.88rem; }
+  .footer-bottom{ display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:22px; padding-bottom:22px; font-size:0.78rem; gap:6px; }
+  .footer-bottom .powered-by{ font-size:0.74rem; opacity:0.7; }
+  .footer-bottom .powered-by a{ color:var(--gold-soft); text-decoration:underline; }
+
+  .sticky-bottom-nav{ display:none; position:fixed; bottom:0; left:0; right:0; z-index:60; background:var(--marble); border-top:1px solid var(--line); box-shadow:0 -4px 16px rgba(74,47,34,0.14); }
+  .sbn-btn{ flex:1; text-align:center; padding:15px 0; font-family:var(--body); font-weight:600; font-size:0.9rem; }
+  .sbn-wa{ background:var(--gold); color:var(--marble); }
+  .sbn-rooms{ background:var(--cocoa); color:var(--marble); }
+
+  @media (max-width:900px){
+    .type-detail{ grid-template-columns:1fr; }
+    .type-detail img{ min-height:220px; }
+    .facil-grid{ grid-template-columns:repeat(2,1fr); }
+    .footer-grid{ grid-template-columns:1fr; }
+    .nav-toggle{ display:block; }
+    .nav-right .lang-pill{ display:none; }
+    .lang-switch-mobile{ display:block; }
+    .nav-links{ position:absolute; top:100%; left:0; right:0; background:var(--cream); flex-direction:column; align-items:flex-start; padding:22px 28px; gap:18px; border-bottom:1px solid var(--line); display:none; }
+    .nav-links.open{ display:flex; }
+    .sticky-bottom-nav{ display:flex; }
+    body{ padding-bottom:56px; }
+  }
+  @media (prefers-reduced-motion:reduce){ .reveal{ opacity:1; transform:none; transition:none; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../index.html" class="brand">
+      <img src="../../assets/logo-villa.jpg" alt="INNerpeace Villa logo">
+      <div class="brand-text"><span class="back">← INNerpeace Bali</span><span class="name">INNerpeace Villa</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="facilities.html" class="active">Tipe &amp; Fasilitas Villa</a></li>
+      <li><a href="index.html#gallery">Galeri</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+      <li class="lang-switch-mobile"><a href="../../villa/facilities.html">English</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-pill"><a href="../../villa/facilities.html"><span>EN</span></a><span class="on">ID</span></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<div class="page-header">
+  <div class="wrap">
+    <span class="crumb">Beranda / Tipe &amp; Fasilitas Villa</span>
+    <span class="eyebrow" style="color:var(--gold-soft)">Tipe &amp; Fasilitas Villa</span>
+    <h1 style="margin-top:14px">Dua villa, dua cara untuk bersantai.</h1>
+    <p class="lede">Setiap villa sepenuhnya privat dan mandiri — dapur sendiri, AC, dan WiFi gratis. Dua tipe ini beda di cara untuk menyegarkan diri: kolam renang privat, atau bathtub semi-outdoor.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+
+    <div class="type-detail reveal">
+      <img src="../../assets/villa/villa-pool-exterior-1.webp" alt="INNerpeace Villa Pool Type">
+      <div class="type-detail-info">
+        <div class="type-units" id="pool-units">2 VILLA DARI TIPE INI</div>
+        <h3>Pool Type</h3>
+        <ul class="type-facil-list" id="pool-facilities">
+          <li>Kolam renang privat (plunge pool)</li>
+          <li>AC</li>
+          <li>WiFi gratis</li>
+          <li>Dapur dengan kulkas, microwave &amp; kompor</li>
+          <li>Kamar mandi dalam dengan shower</li>
+          <li>TV layar datar</li>
+          <li>Teras privat</li>
+          <li>Parkir gratis di lokasi</li>
+          <li>Bebas rokok</li>
+        </ul>
+        <a href="contact.html" class="btn btn-gold">Tanya Ketersediaan</a>
+      </div>
+    </div>
+
+    <div class="type-detail reveal">
+      <img src="../../assets/villa/villa-bathroom-marble-1.webp" alt="INNerpeace Villa Bathtub Type">
+      <div class="type-detail-info">
+        <div class="type-units" id="bathtub-units">2 VILLA DARI TIPE INI</div>
+        <h3>Bathtub Type</h3>
+        <ul class="type-facil-list" id="bathtub-facilities">
+          <li>Bathtub semi-outdoor &amp; hot tub</li>
+          <li>AC</li>
+          <li>WiFi gratis</li>
+          <li>Dapur dengan kulkas, microwave &amp; kompor</li>
+          <li>Shower, bidet &amp; hairdryer</li>
+          <li>TV layar datar</li>
+          <li>Teras privat</li>
+          <li>Parkir gratis di lokasi</li>
+          <li>Bebas rokok</li>
+        </ul>
+        <a href="contact.html" class="btn btn-gold">Tanya Ketersediaan</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="justify-content:center">Di Setiap Villa</span>
+      <h2 style="margin-top:14px">Sama-sama dimiliki kedua tipe.</h2>
+    </div>
+    <div class="facil-grid">
+      <div class="facil-card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9C8 4.5 16 4.5 21 9"/><path d="M6.5 12.5C9.8 9.7 14.2 9.7 17.5 12.5"/><path d="M10 16C11.3 14.9 12.7 14.9 14 16"/><circle cx="12" cy="19" r="1" fill="currentColor"/></svg>
+        <h4>WiFi Gratis</h4><p>Di seluruh area villa.</p>
+      </div>
+      <div class="facil-card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5" y="8" width="14" height="11" rx="1"/><path d="M9 8V5C9 3.9 9.9 3 11 3H13C14.1 3 15 3.9 15 5V8"/></svg>
+        <h4>Dapur Lengkap</h4><p>Kulkas, microwave &amp; kompor.</p>
+      </div>
+      <div class="facil-card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="11" width="18" height="6" rx="1"/><circle cx="7" cy="17" r="1.4" fill="currentColor"/><circle cx="17" cy="17" r="1.4" fill="currentColor"/></svg>
+        <h4>Parkir Gratis</h4><p>Parkir privat di lokasi.</p>
+      </div>
+      <div class="facil-card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="4" width="16" height="12" rx="1"/><path d="M9 20H15"/><path d="M12 16V20"/></svg>
+        <h4>TV Layar Datar</h4><p>Di setiap villa.</p>
+      </div>
+      <div class="facil-card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="6" y="9" width="12" height="8" rx="1"/><path d="M9 9V7C9 5.3 10.3 4 12 4C13.7 4 15 5.3 15 7V9"/></svg>
+        <h4>AC</h4><p>Sejuk sepanjang tahun.</p>
+      </div>
+      <div class="facil-card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 21V9L12 4L20 9V21"/><path d="M9 21V14H15V21"/></svg>
+        <h4>Teras Privat</h4><p>Area outdoor milikmu sendiri.</p>
+      </div>
+      <div class="facil-card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M9 9L15 15M15 9L9 15"/></svg>
+        <h4>Bebas Rokok</h4><p>Semua villa bebas asap rokok.</p>
+      </div>
+      <div class="facil-card reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21C12 21 5 14.5 5 9.5C5 5.9 8 3 12 3C16 3 19 5.9 19 9.5C19 14.5 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+        <h4>Celuk, Sukawati</h4><p>Suasana sawah yang tenang.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band reveal">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--gold-soft); justify-content:center">Sudah Menemukan Tipemu?</span>
+    <h2 style="margin-top:14px; color:var(--marble)">Yuk, cek ketersediaan.</h2>
+    <p class="lede" style="margin-left:auto;margin-right:auto;">Kirim pesan dengan tanggal dan tipe villa yang kakak mau.</p>
+    <a href="contact.html" class="btn btn-gold">Ke Halaman Kontak</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand" style="margin-bottom:14px;"><img src="../../assets/logo-villa.jpg" alt="INNerpeace Villa" style="width:42px;border-radius:9px;"></div>
+      <p style="max-width:32ch;">Villa privat di tengah sawah Celuk, Sukawati — bagian dari keluarga INNerpeace.</p>
+    </div>
+    <div>
+      <h4>Alamat</h4>
+      <p>Jl. Teratai No.168A, Celuk,<br>Sukawati, Gianyar, Bali 80582</p>
+    </div>
+    <div>
+      <h4>Kontak</h4>
+      <p><a href="https://wa.me/6282114678168">WhatsApp: 0821-1467-8168</a><br><a href="https://www.instagram.com/innerpeace.villa.bali/" target="_blank" rel="noopener">@innerpeace.villa.bali</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 INNerpeace Villa.</span>
+    <span class="powered-by">Powered by <a href="https://anabhidev.netlify.app" target="_blank" rel="noopener">Anabhi Dev</a></span>
+  </div>
+</footer>
+
+<div class="sticky-bottom-nav">
+  <a href="https://wa.me/6282114678168" class="sbn-btn sbn-wa">WhatsApp</a>
+  <a href="contact.html" class="sbn-btn sbn-rooms">Kontak</a>
+</div>
+
+<script>
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function(){ navToggle.classList.toggle('open'); navLinks.classList.toggle('open'); });
+  document.querySelectorAll('#navLinks a').forEach(function(a){ a.addEventListener('click', function(){ navToggle.classList.remove('open'); navLinks.classList.remove('open'); }); });
+
+  ['.type-detail-info .type-facil-list', '.facil-grid'].forEach(function(sel){});
+  document.querySelectorAll('.facil-grid').forEach(function(group){
+    var items = group.querySelectorAll('.reveal');
+    items.forEach(function(item, i){ item.style.transitionDelay = (i * 100) + 'ms'; });
+  });
+
+  var els = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  els.forEach(function(el){ io.observe(el); });
+
+  // Load editable content from data/villa.json (set up via the CMS at /admin).
+  // Reads facilities_id (per type) added for this Indonesian mirror, falls back to EN if missing.
+  fetch('../../data/villa.json').then(function(r){ return r.json(); }).then(function(data){
+    function setList(id, items){
+      var el = document.getElementById(id);
+      if(!el || !items) return;
+      el.innerHTML = items.map(function(i){ return '<li>' + i + '</li>'; }).join('');
+    }
+    function setText(id, text){
+      var el = document.getElementById(id);
+      if(el && text) el.textContent = text;
+    }
+    if(data.types && data.types.pool){
+      setText('pool-units', data.types.pool.units + ' VILLA DARI TIPE INI');
+      var poolFacilities = (data.types.pool.facilities_id && data.types.pool.facilities_id.length) ? data.types.pool.facilities_id : data.types.pool.facilities;
+      setList('pool-facilities', poolFacilities);
+    }
+    if(data.types && data.types.bathtub){
+      setText('bathtub-units', data.types.bathtub.units + ' VILLA DARI TIPE INI');
+      var bathtubFacilities = (data.types.bathtub.facilities_id && data.types.bathtub.facilities_id.length) ? data.types.bathtub.facilities_id : data.types.bathtub.facilities;
+      setList('bathtub-facilities', bathtubFacilities);
+    }
+  }).catch(function(err){ console.warn('Could not load data/villa.json, showing static fallback content', err); });
+</script>
+
+</body>
+</html>

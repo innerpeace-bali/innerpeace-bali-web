@@ -1,0 +1,91 @@
+# FILE: admin/config.yml — place inside the `admin/` folder at site root
+#
+# ⚠️ NOT YET FUNCTIONAL — this file references a GitHub repo that does not exist yet.
+# Before this CMS can actually be used to log in and save changes, you need to:
+#   1. Create the GitHub repo and push this site's files into it
+#   2. Replace YOUR-GITHUB-USERNAME/innerpeace-bali below with the real repo path
+#   3. Set up the Cloudflare Worker that handles GitHub OAuth login (separate task,
+#      not done yet — Decap CMS needs this to let you log in with your GitHub account)
+# Until those 3 things are done, opening admin/index.html will show an error, not a login screen.
+
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/innerpeace-bali   # TODO: replace with the real repo
+  branch: main
+  base_url: https://your-oauth-worker.workers.dev   # TODO: replace once the Cloudflare Worker exists
+  auth_endpoint: auth
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "villa"
+    label: "INNerpeace Villa"
+    files:
+      - file: "data/villa.json"
+        label: "Villa Content"
+        name: "villa"
+        fields:
+          - label: "Price"
+            name: "price"
+            widget: "object"
+            fields:
+              - { label: "Amount (e.g. Rp 699,000)", name: "amount", widget: "string" }
+              - { label: "Unit (e.g. /night)", name: "unit", widget: "string" }
+              - { label: "Disclaimer", name: "disclaimer", widget: "text" }
+          - label: "Villa Types"
+            name: "types"
+            widget: "object"
+            fields:
+              - label: "Pool Type"
+                name: "pool"
+                widget: "object"
+                fields:
+                  - { label: "Display Name", name: "name", widget: "string" }
+                  - { label: "Number of Units", name: "units", widget: "number" }
+                  - { label: "Facilities", name: "facilities", widget: "list" }
+              - label: "Bathtub Type"
+                name: "bathtub"
+                widget: "object"
+                fields:
+                  - { label: "Display Name", name: "name", widget: "string" }
+                  - { label: "Number of Units", name: "units", widget: "number" }
+                  - { label: "Facilities", name: "facilities", widget: "list" }
+          - label: "FAQ"
+            name: "faq"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "q", widget: "string" }
+              - { label: "Answer", name: "a", widget: "text" }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "WhatsApp (display)", name: "whatsapp", widget: "string" }
+              - { label: "WhatsApp (numbers only, with country code)", name: "whatsapp_link", widget: "string" }
+              - { label: "Address", name: "address", widget: "text" }
+              - { label: "Instagram (display)", name: "instagram", widget: "string" }
+              - { label: "Instagram (link)", name: "instagram_link", widget: "string" }
+
+  - name: "residence"
+    label: "INNerpeace Residence"
+    files:
+      - file: "data/residence.json"
+        label: "Residence Content"
+        name: "residence"
+        fields:
+          - label: "Price"
+            name: "price"
+            widget: "object"
+            fields:
+              - { label: "Amount (e.g. Rp 3,000,000)", name: "amount", widget: "string" }
+              - { label: "Unit (e.g. /month)", name: "unit", widget: "string" }
+          - { label: "Number of Units", name: "units", widget: "number" }
+          - { label: "Facilities", name: "facilities", widget: "list" }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "WhatsApp (display)", name: "whatsapp", widget: "string" }
+              - { label: "WhatsApp (numbers only, with country code)", name: "whatsapp_link", widget: "string" }
+              - { label: "Address", name: "address", widget: "text" }

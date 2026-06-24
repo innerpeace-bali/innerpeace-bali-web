@@ -1,0 +1,82 @@
+{
+  "price": {
+    "amount": "Rp 699,000",
+    "unit": "/night",
+    "unit_id": "/malam",
+    "disclaimer": "Indicative starting price, varies by villa type, season & length of stay. Contact us to confirm.",
+    "disclaimer_id": "Harga mulai bersifat indikatif, tergantung tipe villa, musim & lama menginap. Hubungi kami untuk konfirmasi."
+  },
+  "types": {
+    "pool": {
+      "name": "Pool Type",
+      "units": 2,
+      "facilities": [
+        "Private plunge pool",
+        "Air conditioning",
+        "Free WiFi",
+        "Kitchen with fridge, microwave & stove",
+        "Ensuite bathroom with shower",
+        "Flat-screen TV",
+        "Private terrace",
+        "Free parking on-site",
+        "Non-smoking"
+      ],
+      "facilities_id": [
+        "Kolam renang privat (plunge pool)",
+        "AC",
+        "WiFi gratis",
+        "Dapur dengan kulkas, microwave & kompor",
+        "Kamar mandi dalam dengan shower",
+        "TV layar datar",
+        "Teras privat",
+        "Parkir gratis di lokasi",
+        "Bebas rokok"
+      ]
+    },
+    "bathtub": {
+      "name": "Bathtub Type",
+      "units": 2,
+      "facilities": [
+        "Semi-outdoor bathtub & hot tub",
+        "Air conditioning",
+        "Free WiFi",
+        "Kitchen with fridge, microwave & stove",
+        "Shower, bidet & hairdryer",
+        "Flat-screen TV",
+        "Private terrace",
+        "Free parking on-site",
+        "Non-smoking"
+      ],
+      "facilities_id": [
+        "Bathtub semi-outdoor & hot tub",
+        "AC",
+        "WiFi gratis",
+        "Dapur dengan kulkas, microwave & kompor",
+        "Shower, bidet & hairdryer",
+        "TV layar datar",
+        "Teras privat",
+        "Parkir gratis di lokasi",
+        "Bebas rokok"
+      ]
+    }
+  },
+  "faq": [
+    { "q": "What time is check-in and check-out?", "a": "Standard check-in is from the afternoon, and check-out is late morning. Exact times can be confirmed when you book." },
+    { "q": "Is breakfast included?", "a": "This depends on the rate you book. Please ask us directly to confirm what's included for your dates." },
+    { "q": "What is the cancellation policy?", "a": "Cancellation terms vary by booking platform and rate type. Please check your booking confirmation or ask us directly." },
+    { "q": "Is airport pickup available?", "a": "Please contact us directly to ask about airport transfer options." }
+  ],
+  "faq_id": [
+    { "q": "Jam berapa check-in dan check-out?", "a": "Check-in standar mulai siang hari, dan check-out di akhir pagi. Waktu pastinya bisa dikonfirmasi saat booking." },
+    { "q": "Apakah sarapan termasuk?", "a": "Tergantung tarif yang dipesan. Silakan tanya langsung ke kami untuk konfirmasi apa yang termasuk di tanggal kakak." },
+    { "q": "Bagaimana kebijakan pembatalan?", "a": "Ketentuan pembatalan berbeda tergantung platform booking dan jenis tarif. Cek konfirmasi booking kakak atau tanya langsung ke kami." },
+    { "q": "Apakah ada layanan antar-jemput dari bandara?", "a": "Silakan hubungi kami langsung untuk menanyakan opsi antar-jemput." }
+  ],
+  "contact": {
+    "whatsapp": "0821-1467-8168",
+    "whatsapp_link": "6282114678168",
+    "address": "Jl. Teratai No.168A, Celuk, Sukawati, Gianyar, Bali 80582",
+    "instagram": "@innerpeace.villa.bali",
+    "instagram_link": "https://www.instagram.com/innerpeace.villa.bali/"
+  }
+}

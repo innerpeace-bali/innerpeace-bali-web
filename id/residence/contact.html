@@ -1,0 +1,237 @@
+<!-- FILE: id/residence/contact.html — KETERANGAN: INI VERSI BAHASA INDONESIA (mirror dari residence/contact.html versi EN) -->
+<!-- Taruh file ini di dalam folder id/residence/ (jadi: id/residence/contact.html) -->
+<!-- Asset (gambar, favicon) TIDAK diduplikasi — tetap ambil dari root, makanya path-nya pakai ../../ -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kontak | INNerpeace Residence — Celuk, Gianyar, Bali</title>
+<meta name="description" content="Hubungi INNerpeace Residence untuk cek ketersediaan kamar — WhatsApp dan alamat di Celuk, Sukawati, Gianyar, Bali.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.innerpeacebali.com/id/residence/contact.html">
+<link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/residence/contact.html">
+<link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/residence/contact.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INNerpeace Residence">
+<meta property="og:title" content="Kontak | INNerpeace Residence">
+<meta property="og:description" content="Cek ketersediaan kamar di INNerpeace Residence di Celuk, Sukawati, Gianyar, Bali.">
+<meta property="og:url" content="https://www.innerpeacebali.com/id/residence/contact.html">
+
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon-180.png">
+<meta name="theme-color" content="#4A2F22">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F3E8D9; --cocoa:#4A2F22; --cocoa-soft:#6B4A33; --marble:#FAF7F2;
+    --gold:#B8924F; --gold-soft:#D8BD86; --sage:#6B7F5E; --line: rgba(74,47,34,0.14);
+    --display: "Playfair Display", Georgia, serif;
+    --body: "Work Sans", Arial, sans-serif;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ margin:0; background:var(--cream); color:var(--cocoa); font-family:var(--body); line-height:1.65; -webkit-font-smoothing:antialiased; }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 28px; }
+  h1,h2{ font-family:var(--display); font-weight:600; margin:0; color:var(--cocoa); letter-spacing:-0.01em; }
+  h1{ font-size:clamp(2rem,3.6vw,2.8rem); }
+  h2{ font-size:1.5rem; margin-bottom:22px; }
+  p{ margin:0; }
+  .lede{ color:var(--cocoa-soft); font-size:1.05rem; max-width:48ch; }
+  .eyebrow{ display:inline-flex; align-items:center; gap:10px; font-family:var(--display); font-style:italic; font-size:0.95rem; color:var(--gold); font-weight:600; }
+  .eyebrow::before{ content:""; width:22px; height:1px; background:var(--gold); display:inline-block; }
+
+  .site-header{ position:sticky; top:0; z-index:50; background:rgba(243,232,217,0.92); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); }
+  .nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 28px; max-width:1180px; margin:0 auto; gap:18px; }
+  .brand{ display:flex; align-items:center; gap:12px; }
+  .brand img{ width:46px; height:auto; border-radius:10px; }
+  .brand-text{ display:flex; flex-direction:column; line-height:1.15; }
+  .brand-text .back{ font-size:0.7rem; color:var(--cocoa-soft); }
+  .brand-text .name{ font-family:var(--display); font-style:italic; font-weight:600; font-size:1.1rem; }
+  .nav-links{ display:flex; gap:28px; list-style:none; margin:0; padding:0; }
+  .nav-links a{ font-size:0.88rem; font-weight:500; color:var(--cocoa-soft); }
+  .nav-links a:hover, .nav-links a.active{ color:var(--cocoa); }
+  .nav-right{ display:flex; align-items:center; gap:16px; }
+  .lang-pill{ display:flex; border:1px solid var(--cocoa); border-radius:30px; overflow:hidden; font-size:0.76rem; font-weight:600; }
+  .lang-pill span{ padding:5px 12px; display:inline-block; }
+  .lang-pill .on{ background:var(--cocoa); color:var(--marble); }
+  .lang-switch-mobile{ display:none; }
+  .nav-toggle{ display:none; background:none; border:none; cursor:pointer; width:26px; height:18px; position:relative; padding:0; }
+  .nav-toggle span{ position:absolute; left:0; right:0; height:2px; background:var(--cocoa); transition:all .25s ease; }
+  .nav-toggle span:nth-child(1){ top:0; } .nav-toggle span:nth-child(2){ top:8px; } .nav-toggle span:nth-child(3){ top:16px; }
+  .nav-toggle.open span:nth-child(1){ transform:translateY(8px) rotate(45deg); }
+  .nav-toggle.open span:nth-child(2){ opacity:0; }
+  .nav-toggle.open span:nth-child(3){ transform:translateY(-8px) rotate(-45deg); }
+
+  .page-header{ background:var(--cocoa); color:var(--marble); padding:56px 0 48px; }
+  .page-header .lede{ color:rgba(250,247,242,0.78); margin-top:12px; }
+  .crumb{ font-size:0.8rem; color:rgba(250,247,242,0.55); margin-bottom:14px; display:block; }
+
+  .reveal{ opacity:0; transform:translateY(22px); transition:opacity 1.2s ease-out, transform 1.2s ease-out; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+
+  section{ padding:70px 0; }
+  .contact-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:50px; }
+
+  .field{ margin-bottom:18px; }
+  .field label{ display:block; font-size:0.82rem; font-weight:600; margin-bottom:7px; }
+  .field input, .field textarea, .field select{
+    width:100%; padding:12px 14px; border:1px solid var(--line); background:var(--marble);
+    font-family:var(--body); font-size:0.94rem; color:var(--cocoa); border-radius:2px;
+  }
+  .field textarea{ resize:vertical; min-height:100px; }
+  .field input:focus, .field textarea:focus, .field select:focus{ outline:2px solid var(--gold); outline-offset:1px; }
+  .btn{ display:inline-flex; align-items:center; gap:10px; padding:14px 28px; font-family:var(--body); font-weight:600; font-size:0.9rem; border-radius:2px; border:1px solid transparent; cursor:pointer; transition:all .2s ease; }
+  .btn-gold{ background:var(--gold); color:var(--marble); }
+  .btn-gold:hover{ background:var(--gold-soft); }
+  .btn-block{ width:100%; justify-content:center; }
+
+  .info-card{ background:var(--marble); padding:30px; margin-bottom:18px; }
+  .info-row{ display:flex; gap:14px; padding:13px 0; border-bottom:1px solid var(--line); }
+  .info-row:last-child{ border-bottom:none; }
+  .info-row svg{ width:20px; height:20px; color:var(--gold); flex-shrink:0; margin-top:2px; }
+  .info-row b{ display:block; font-size:0.88rem; margin-bottom:3px; }
+  .info-row span{ font-size:0.88rem; color:var(--cocoa-soft); }
+  .map-slot{ background:var(--marble); border:1px dashed var(--sage); aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; color:var(--cocoa-soft); font-size:0.82rem; text-align:center; padding:20px; }
+
+  footer{ background:var(--cocoa); color:rgba(250,247,242,0.7); }
+  .footer-grid{ display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:40px; padding-top:50px; padding-bottom:30px; border-bottom:1px solid rgba(250,247,242,0.15); }
+  .footer-grid h4{ color:var(--marble); font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 14px; }
+  .footer-grid p{ font-size:0.85rem; }
+  .footer-grid a{ font-size:0.88rem; }
+  .footer-bottom{ display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:22px; padding-bottom:22px; font-size:0.78rem; gap:6px; }
+  .footer-bottom .powered-by{ font-size:0.74rem; opacity:0.7; }
+  .footer-bottom .powered-by a{ color:var(--gold-soft); text-decoration:underline; }
+
+  .sticky-bottom-nav{ display:none; position:fixed; bottom:0; left:0; right:0; z-index:60; background:var(--marble); border-top:1px solid var(--line); box-shadow:0 -4px 16px rgba(74,47,34,0.14); }
+  .sbn-btn{ flex:1; text-align:center; padding:15px 0; font-family:var(--body); font-weight:600; font-size:0.9rem; }
+  .sbn-wa{ background:var(--gold); color:var(--marble); }
+  .sbn-contact{ background:var(--cocoa); color:var(--marble); }
+
+  @media (max-width:900px){
+    .contact-grid{ grid-template-columns:1fr; gap:36px; }
+    .footer-grid{ grid-template-columns:1fr; }
+    .nav-toggle{ display:block; }
+    .nav-right .lang-pill{ display:none; }
+    .lang-switch-mobile{ display:block; }
+    .nav-links{ position:absolute; top:100%; left:0; right:0; background:var(--cream); flex-direction:column; align-items:flex-start; padding:22px 28px; gap:18px; border-bottom:1px solid var(--line); display:none; }
+    .nav-links.open{ display:flex; }
+    .sticky-bottom-nav{ display:flex; }
+    body{ padding-bottom:56px; }
+  }
+  @media (prefers-reduced-motion:reduce){ .reveal{ opacity:1; transform:none; transition:none; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../index.html" class="brand">
+      <img src="../../assets/logo-residence.jpg" alt="INNerpeace Residence logo">
+      <div class="brand-text"><span class="back">← INNerpeace Bali</span><span class="name">INNerpeace Residence</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="index.html#room">Kamar &amp; Fasilitas</a></li>
+      <li><a href="index.html#why">Mengapa Residence</a></li>
+      <li><a href="contact.html" class="active">Kontak</a></li>
+      <li class="lang-switch-mobile"><a href="../../residence/contact.html">English</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-pill"><a href="../../residence/contact.html"><span>EN</span></a><span class="on">ID</span></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<div class="page-header">
+  <div class="wrap">
+    <span class="crumb">Beranda / Kontak</span>
+    <span class="eyebrow" style="color:var(--gold-soft)">Kontak</span>
+    <h1 style="margin-top:14px">Yuk, cek ketersediaan kamar.</h1>
+    <p class="lede">Kirim pesan atau chat langsung lewat WhatsApp — biasanya kami balas dalam beberapa jam.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap contact-grid">
+
+    <div class="reveal">
+      <h2>Kirim Pesan</h2>
+      <form id="contact-form">
+        <div class="field"><label for="name">Nama Lengkap</label><input type="text" id="name" placeholder="Nama Anda" required></div>
+        <div class="field"><label for="phone">Nomor WhatsApp</label><input type="tel" id="phone" placeholder="+62 8xx-xxxx-xxxx" required></div>
+        <div class="field"><label for="movein">Tanggal Rencana Pindah</label><input type="text" id="movein" placeholder="misal: 1 Agustus 2026"></div>
+        <div class="field"><label for="message">Pesan</label><textarea id="message" placeholder="Ada hal lain yang perlu kami ketahui?"></textarea></div>
+        <button type="submit" class="btn btn-gold btn-block">Kirim via WhatsApp</button>
+      </form>
+    </div>
+
+    <div class="reveal">
+      <div class="info-card">
+        <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21C12 21 5 14.5 5 9.5C5 5.9 8 3 12 3C16 3 19 5.9 19 9.5C19 14.5 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg><div><b>Alamat</b><span>Jl. Subak Mungkul No.3, Celuk, Sukawati, Gianyar, Bali 80582</span></div></div>
+        <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 4H9L11 9L8.5 10.5C9.5 12.5 11.5 14.5 13.5 15.5L15 13L20 15V19C20 20.1 19.1 21 18 21C10.3 20.5 4.5 14.7 4 7C4 5.9 4.9 4 5 4Z"/></svg><div><b>WhatsApp</b><span>0851-9084-5076</span></div></div>
+      </div>
+      <div class="map-slot">Tempat untuk embed Google Maps<br>(ganti blok ini dengan kode embed asli setelah tersedia)</div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand" style="margin-bottom:14px;"><img src="../../assets/logo-residence.jpg" alt="INNerpeace Residence" style="width:42px;border-radius:9px;"></div>
+      <p style="max-width:32ch;">Kamar bulanan untuk para profesional di Celuk, Sukawati — bagian dari keluarga INNerpeace.</p>
+    </div>
+    <div>
+      <h4>Alamat</h4>
+      <p>Jl. Subak Mungkul No.3, Celuk,<br>Sukawati, Gianyar, Bali 80582</p>
+    </div>
+    <div>
+      <h4>Kontak</h4>
+      <p><a href="https://wa.me/6285190845076">WhatsApp: 0851-9084-5076</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 INNerpeace Residence.</span>
+    <span class="powered-by">Powered by <a href="https://anabhidev.netlify.app" target="_blank" rel="noopener">Anabhi Dev</a></span>
+  </div>
+</footer>
+
+<div class="sticky-bottom-nav">
+  <a href="https://wa.me/6285190845076" class="sbn-btn sbn-wa">WhatsApp</a>
+  <a href="index.html#room" class="sbn-btn sbn-contact">Info Kamar</a>
+</div>
+
+<script>
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function(){ navToggle.classList.toggle('open'); navLinks.classList.toggle('open'); });
+  document.querySelectorAll('#navLinks a').forEach(function(a){ a.addEventListener('click', function(){ navToggle.classList.remove('open'); navLinks.classList.remove('open'); }); });
+
+  var els = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  els.forEach(function(el){ io.observe(el); });
+
+  var form = document.getElementById('contact-form');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('name').value;
+    var movein = document.getElementById('movein').value;
+    var msg = document.getElementById('message').value;
+    var text = encodeURIComponent('Hai INNerpeace Residence, saya ' + name + '. Rencana pindah: ' + movein + '. ' + msg);
+    window.open('https://wa.me/6285190845076?text=' + text, '_blank');
+  });
+</script>
+
+</body>
+</html>

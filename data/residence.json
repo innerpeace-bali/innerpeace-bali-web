@@ -1,0 +1,33 @@
+{
+  "price": {
+    "amount": "Rp 3,000,000",
+    "unit": "/month",
+    "unit_id": "/bulan"
+  },
+  "units": 8,
+  "facilities": [
+    "Air conditioning",
+    "Ensuite bathroom",
+    "King Koil mattress",
+    "Built-in wardrobe",
+    "Private small terrace",
+    "Mini-fridge",
+    "Free WiFi",
+    "Car parking on-site"
+  ],
+  "facilities_id": [
+    "AC",
+    "Kamar mandi dalam",
+    "Kasur King Koil",
+    "Lemari pakaian built-in",
+    "Teras privat kecil",
+    "Kulkas mini",
+    "WiFi gratis",
+    "Parkir mobil di lokasi"
+  ],
+  "contact": {
+    "whatsapp": "0851-9084-5076",
+    "whatsapp_link": "6285190845076",
+    "address": "Jl. Subak Mungkul No.3, Celuk, Sukawati, Gianyar, Bali 80582"
+  }
+}

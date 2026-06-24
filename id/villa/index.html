@@ -1,0 +1,409 @@
+<!-- FILE: id/villa/index.html — KETERANGAN: INI VERSI BAHASA INDONESIA (mirror dari villa/index.html versi EN) -->
+<!-- Taruh file ini di dalam folder id/villa/ (jadi: id/villa/index.html) -->
+<!-- Asset (gambar, favicon) & data/villa.json TIDAK diduplikasi — tetap ambil dari root, makanya path-nya pakai ../../ -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>INNerpeace Villa | Villa Privat di Tengah Sawah — Celuk, Gianyar, Bali</title>
+<meta name="description" content="INNerpeace Villa — villa privat di tengah sawah di Celuk, Sukawati, Gianyar. 4 villa, pilihan kolam renang atau bathtub. Skor 9.7 di Booking.com. Less Noise, More Peace.">
+<meta name="keywords" content="INNerpeace Villa, villa sawah Bali, villa kolam renang privat Gianyar, villa Celuk Sukawati, sewa villa Bali, villa bathtub Bali">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.innerpeacebali.com/id/villa/">
+<link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/villa/">
+<link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/villa/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INNerpeace Villa">
+<meta property="og:title" content="INNerpeace Villa | Less Noise, More Peace">
+<meta property="og:description" content="Villa privat di tengah sawah di Celuk, Sukawati, Gianyar — pilihan kolam renang atau bathtub. Skor 9.7 di Booking.com.">
+<meta property="og:image" content="https://www.innerpeacebali.com/assets/villa/villa-pool-exterior-1.webp">
+<meta property="og:url" content="https://www.innerpeacebali.com/id/villa/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="INNerpeace Villa | Less Noise, More Peace">
+<meta name="twitter:description" content="Villa privat di tengah sawah di Celuk, Sukawati, Gianyar — pilihan kolam renang atau bathtub.">
+<meta name="twitter:image" content="https://www.innerpeacebali.com/assets/villa/villa-pool-exterior-1.webp">
+
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon-180.png">
+<link rel="icon" type="image/png" sizes="512x512" href="../../assets/favicon-512.png">
+<meta name="theme-color" content="#4A2F22">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F3E8D9; --cocoa:#4A2F22; --cocoa-soft:#6B4A33; --marble:#FAF7F2;
+    --gold:#B8924F; --gold-soft:#D8BD86; --sage:#6B7F5E; --line: rgba(74,47,34,0.14);
+    --display: "Playfair Display", Georgia, serif;
+    --display-hero: "Cormorant Garamond", Georgia, serif;
+    --body: "Work Sans", Arial, sans-serif;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ margin:0; background:var(--cream); color:var(--cocoa); font-family:var(--body); line-height:1.65; -webkit-font-smoothing:antialiased; }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  .wrap{ max-width:1180px; margin:0 auto; padding:0 28px; }
+  h1,h2,h3{ font-family:var(--display); font-weight:600; margin:0; color:var(--cocoa); letter-spacing:-0.01em; }
+  h1{ font-size:clamp(2.3rem,5vw,4rem); line-height:1.1; }
+  h2{ font-size:clamp(1.7rem,3vw,2.5rem); line-height:1.18; }
+  p{ margin:0; }
+  .lede{ color:var(--cocoa-soft); font-size:1.05rem; max-width:48ch; }
+  .eyebrow{ display:inline-flex; align-items:center; gap:10px; font-family:var(--display); font-style:italic; font-size:0.95rem; color:var(--gold); font-weight:600; }
+  .eyebrow::before{ content:""; width:22px; height:1px; background:var(--gold); display:inline-block; }
+
+  .site-header{ position:sticky; top:0; z-index:50; background:rgba(243,232,217,0.92); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); }
+  .nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 28px; max-width:1180px; margin:0 auto; gap:18px; }
+  .brand{ display:flex; align-items:center; gap:12px; }
+  .brand img{ width:46px; height:auto; border-radius:10px; }
+  .brand-text{ display:flex; flex-direction:column; line-height:1.15; }
+  .brand-text .back{ font-size:0.7rem; color:var(--cocoa-soft); }
+  .brand-text .name{ font-family:var(--display); font-style:italic; font-weight:600; font-size:1.1rem; }
+  .nav-links{ display:flex; gap:28px; list-style:none; margin:0; padding:0; }
+  .nav-links a{ font-size:0.88rem; font-weight:500; color:var(--cocoa-soft); }
+  .nav-links a:hover{ color:var(--cocoa); }
+  .nav-right{ display:flex; align-items:center; gap:16px; }
+  .lang-pill{ display:flex; border:1px solid var(--cocoa); border-radius:30px; overflow:hidden; font-size:0.76rem; font-weight:600; }
+  .lang-pill span{ padding:5px 12px; display:inline-block; }
+  .lang-pill .on{ background:var(--cocoa); color:var(--marble); }
+  .lang-switch-mobile{ display:none; }
+  .nav-toggle{ display:none; background:none; border:none; cursor:pointer; width:26px; height:18px; position:relative; padding:0; }
+  .nav-toggle span{ position:absolute; left:0; right:0; height:2px; background:var(--cocoa); transition:all .25s ease; }
+  .nav-toggle span:nth-child(1){ top:0; } .nav-toggle span:nth-child(2){ top:8px; } .nav-toggle span:nth-child(3){ top:16px; }
+  .nav-toggle.open span:nth-child(1){ transform:translateY(8px) rotate(45deg); }
+  .nav-toggle.open span:nth-child(2){ opacity:0; }
+  .nav-toggle.open span:nth-child(3){ transform:translateY(-8px) rotate(-45deg); }
+
+  .hero{ position:relative; min-height:80vh; display:flex; align-items:center; overflow:hidden; }
+  .hero-bg{ position:absolute; inset:0; background-image:url('../../assets/villa/villa-pool-exterior-1.webp'); background-size:cover; background-position:center; }
+  .hero-bg::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(31,20,14,0.55) 0%, rgba(31,20,14,0.35) 45%, rgba(31,20,14,0.78) 100%); }
+  .hero-inner{ position:relative; z-index:2; color:var(--marble); text-align:center; width:100%; padding:60px 28px; }
+  .hero-inner .eyebrow{ color:var(--gold-soft); justify-content:center; }
+  .hero-inner h1{ color:var(--marble); margin-top:16px; font-family:var(--display-hero); font-weight:600; font-size:clamp(2.6rem,6vw,4.4rem); }
+  .hero-inner .lede{ color:rgba(250,247,242,0.86); margin:18px auto 0; text-align:center; font-size:1.1rem; }
+  .hero-ctas{ display:flex; gap:16px; justify-content:center; margin-top:34px; flex-wrap:wrap; }
+  .btn{ display:inline-flex; align-items:center; gap:10px; padding:14px 28px; font-family:var(--body); font-weight:600; font-size:0.9rem; border-radius:2px; border:1px solid transparent; cursor:pointer; transition:all .2s ease; }
+  .btn-gold{ background:var(--gold); color:var(--marble); }
+  .btn-gold:hover{ background:var(--gold-soft); }
+  .btn-outline{ border-color:rgba(250,247,242,0.55); color:var(--marble); }
+  .btn-outline:hover{ background:var(--marble); color:var(--cocoa); }
+  .btn-outline-dark{ border-color:var(--cocoa); color:var(--cocoa); }
+  .btn-outline-dark:hover{ background:var(--cocoa); color:var(--marble); }
+
+  .reveal{ opacity:0; transform:translateY(22px); transition:opacity 1.2s ease-out, transform 1.2s ease-out; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+
+  section{ padding:80px 0; }
+  .section-tight{ padding:56px 0; }
+  .section-head{ text-align:center; margin-bottom:46px; }
+
+  /* facts strip */
+  .facts-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+  .fact-cell{ background:var(--marble); padding:26px; text-align:center; }
+  .fact-num{ font-family:var(--display); font-size:1.7rem; color:var(--gold); }
+  .fact-label{ font-size:0.8rem; color:var(--cocoa-soft); margin-top:4px; }
+
+  /* villa type cards */
+  .type-grid{ display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  .type-card{ position:relative; border-radius:2px; overflow:hidden; aspect-ratio:4/5; }
+  .type-card img{ width:100%; height:100%; object-fit:cover; }
+  .type-overlay{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(31,20,14,0) 30%, rgba(31,20,14,0.88) 100%); display:flex; flex-direction:column; justify-content:flex-end; padding:30px; color:var(--marble); }
+  .type-overlay h3{ color:var(--marble); margin-bottom:10px; }
+  .type-facils{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
+  .type-facils span{ font-size:0.76rem; border:1px solid rgba(250,247,242,0.4); border-radius:20px; padding:4px 12px; }
+  .type-units{ font-size:0.8rem; color:var(--gold-soft); margin-bottom:6px; }
+
+  /* rating breakdown */
+  .rating-band{ background:var(--cocoa); color:var(--marble); }
+  .rating-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(250,247,242,0.12); text-align:center; }
+  .rating-cell{ padding:28px 14px; }
+  .rating-num{ font-family:var(--display); font-size:2rem; color:var(--gold-soft); }
+  .rating-label{ font-size:0.8rem; color:rgba(250,247,242,0.7); margin-top:6px; }
+  .rating-source{ text-align:center; font-size:0.78rem; color:rgba(250,247,242,0.55); margin-top:18px; }
+
+  /* gallery */
+  .gallery-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  .gallery-item{ position:relative; display:block; aspect-ratio:1/1; overflow:hidden; border-radius:2px; }
+  .gallery-item img{ width:100%; height:100%; object-fit:cover; }
+
+  /* FAQ */
+  .faq-item{ border-bottom:1px solid var(--line); padding:20px 0; }
+  .faq-q{ font-family:var(--display); font-weight:600; font-size:1.02rem; display:flex; justify-content:space-between; align-items:center; cursor:pointer; }
+  .faq-q::after{ content:"+"; font-size:1.3rem; color:var(--gold); transition:transform .25s ease; }
+  .faq-item.open .faq-q::after{ transform:rotate(45deg); }
+  .faq-a{ max-height:0; overflow:hidden; transition:max-height .3s ease; }
+  .faq-a p{ color:var(--cocoa-soft); font-size:0.92rem; padding-top:12px; max-width:70ch; }
+  .faq-note{ font-size:0.78rem; color:var(--cocoa-soft); margin-top:18px; font-style:italic; }
+
+  .cta-band{ background:linear-gradient(160deg, var(--cocoa) 0%, var(--cocoa-soft) 100%); color:var(--marble); text-align:center; }
+  .cta-band .lede{ color:rgba(250,247,242,0.8); margin:18px auto 30px; }
+  .wa-row{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+
+  footer{ background:var(--cocoa); color:rgba(250,247,242,0.7); }
+  .footer-grid{ display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:40px; padding-top:50px; padding-bottom:30px; border-bottom:1px solid rgba(250,247,242,0.15); }
+  .footer-grid h4{ color:var(--marble); font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 14px; }
+  .footer-grid p{ font-size:0.85rem; }
+  .footer-grid a{ font-size:0.88rem; }
+  .footer-bottom{ display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:22px; padding-bottom:22px; font-size:0.78rem; gap:6px; }
+  .footer-bottom .powered-by{ font-size:0.74rem; opacity:0.7; }
+  .footer-bottom .powered-by a{ color:var(--gold-soft); text-decoration:underline; }
+
+  .sticky-bottom-nav{ display:none; position:fixed; bottom:0; left:0; right:0; z-index:60; background:var(--marble); border-top:1px solid var(--line); box-shadow:0 -4px 16px rgba(74,47,34,0.14); }
+  .sbn-btn{ flex:1; text-align:center; padding:15px 0; font-family:var(--body); font-weight:600; font-size:0.9rem; }
+  .sbn-wa{ background:var(--gold); color:var(--marble); }
+  .sbn-rooms{ background:var(--cocoa); color:var(--marble); }
+
+  @media (max-width:900px){
+    .facts-grid{ grid-template-columns:repeat(2,1fr); }
+    .type-grid{ grid-template-columns:1fr; }
+    .rating-grid{ grid-template-columns:repeat(2,1fr); }
+    .gallery-grid{ grid-template-columns:repeat(2,1fr); }
+    .footer-grid{ grid-template-columns:1fr; }
+    .nav-toggle{ display:block; }
+    .nav-right .lang-pill{ display:none; }
+    .lang-switch-mobile{ display:block; }
+    .nav-links{ position:absolute; top:100%; left:0; right:0; background:var(--cream); flex-direction:column; align-items:flex-start; padding:22px 28px; gap:18px; border-bottom:1px solid var(--line); display:none; }
+    .nav-links.open{ display:flex; }
+    .sticky-bottom-nav{ display:flex; }
+    body{ padding-bottom:56px; }
+  }
+  @media (prefers-reduced-motion:reduce){ .reveal{ opacity:1; transform:none; transition:none; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../index.html" class="brand">
+      <img src="../../assets/logo-villa.jpg" alt="INNerpeace Villa logo">
+      <div class="brand-text"><span class="back">← INNerpeace Bali</span><span class="name">INNerpeace Villa</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#top">Beranda</a></li>
+      <li><a href="facilities.html">Tipe &amp; Fasilitas Villa</a></li>
+      <li><a href="#gallery">Galeri</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+      <li class="lang-switch-mobile"><a href="../../villa/index.html">English</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-pill"><a href="../../villa/index.html"><span>EN</span></a><span class="on">ID</span></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="eyebrow">Celuk, Sukawati — Gianyar, Bali</span>
+    <h1>Villa Privat di Tengah Sawah,<br>Less Noise, More Peace.</h1>
+    <p class="lede" style="margin-left:auto;margin-right:auto;">4 villa privat di tengah sawah — pilihan kolam renang privat atau bathtub semi-outdoor yang tenang. Skor 9.7 di Booking.com.</p>
+    <div class="hero-ctas">
+      <a href="#types" class="btn btn-gold">Lihat Tipe Villa</a>
+      <a href="#contact" class="btn btn-outline">WhatsApp Kami</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div class="facts-grid">
+      <div class="fact-cell reveal"><div class="fact-num">4</div><div class="fact-label">Villa Privat</div></div>
+      <div class="fact-cell reveal"><div class="fact-num">2</div><div class="fact-label">Tipe Villa</div></div>
+      <div class="fact-cell reveal"><div class="fact-num">9.7</div><div class="fact-label">Skor Booking.com</div></div>
+      <div class="fact-cell reveal"><div class="fact-num">5.0</div><div class="fact-label">Rating Google</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="types">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="justify-content:center">Pilih Villa Kamu</span>
+      <h2 style="margin-top:14px">Dua cara menginap, sama-sama tenang.</h2>
+    </div>
+    <div class="type-grid">
+      <div class="type-card reveal">
+        <img src="../../assets/villa/villa-pool-exterior-1.webp" alt="INNerpeace Villa Pool Type">
+        <div class="type-overlay">
+          <div class="type-units">2 villa dari tipe ini</div>
+          <h3>Pool Type</h3>
+          <div class="type-facils"><span>Kolam renang privat</span><span>AC</span><span>WiFi gratis</span><span>Dapur</span></div>
+          <a href="contact.html" class="btn btn-outline">Tanya Ketersediaan</a>
+        </div>
+      </div>
+      <div class="type-card reveal">
+        <img src="../../assets/villa/villa-bathroom-marble-1.webp" alt="INNerpeace Villa Bathtub Type">
+        <div class="type-overlay">
+          <div class="type-units">2 villa dari tipe ini</div>
+          <h3>Bathtub Type</h3>
+          <div class="type-facils"><span>Bathtub semi-outdoor</span><span>Hot tub</span><span>AC</span><span>WiFi gratis</span></div>
+          <a href="contact.html" class="btn btn-outline">Tanya Ketersediaan</a>
+        </div>
+      </div>
+    </div>
+    <p id="price-disclaimer" style="font-size:0.78rem;color:var(--cocoa-soft);margin-top:18px;text-align:center;">Mulai dari Rp 699.000/malam* — *harga mulai bersifat indikatif, tergantung tipe villa, musim &amp; lama menginap. Hubungi kami untuk konfirmasi.</p>
+  </div>
+</section>
+
+<section class="rating-band">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="color:var(--gold-soft); justify-content:center">Skor Tamu</span>
+      <h2 style="margin-top:14px; color:var(--marble)">9.7 dari 10, dinilai oleh 37 tamu.</h2>
+    </div>
+    <div class="rating-grid">
+      <div class="rating-cell reveal"><div class="rating-num">9.8</div><div class="rating-label">Host</div></div>
+      <div class="rating-cell reveal"><div class="rating-num">9.9</div><div class="rating-label">Fasilitas</div></div>
+      <div class="rating-cell reveal"><div class="rating-num">9.8</div><div class="rating-label">Kebersihan</div></div>
+      <div class="rating-cell reveal"><div class="rating-num">9.7</div><div class="rating-label">Kenyamanan</div></div>
+      <div class="rating-cell reveal"><div class="rating-num">9.6</div><div class="rating-label">Nilai Sebanding Harga</div></div>
+      <div class="rating-cell reveal"><div class="rating-num">8.7</div><div class="rating-label">Lokasi</div></div>
+    </div>
+    <div class="rating-source">Skor via Booking.com</div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="justify-content:center">Sekilas dari Dalam</span>
+      <h2 style="margin-top:14px">Galeri</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal"><img src="../../assets/villa/villa-exterior-night-1.webp" alt="Villa exterior at night"></div>
+      <div class="gallery-item reveal"><img src="../../assets/villa/villa-bedroom-teak-1.webp" alt="Villa bedroom"></div>
+      <div class="gallery-item reveal"><img src="../../assets/villa/villa-bathroom-wood-1.webp" alt="Villa bathroom"></div>
+      <div class="gallery-item reveal"><img src="../../assets/villa/villa-terrace-view-1.webp" alt="Villa terrace view"></div>
+      <div class="gallery-item reveal"><img src="../../assets/villa/villa-bedroom-covelight-1.webp" alt="Villa bedroom with cove lighting"></div>
+      <div class="gallery-item reveal"><img src="../../assets/villa/villa-bathroom-dark-1.webp" alt="Villa dark marble bathroom"></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap" style="max-width:760px;">
+    <div class="section-head">
+      <span class="eyebrow" style="justify-content:center">Yang Perlu Diketahui</span>
+      <h2 style="margin-top:14px">Pertanyaan yang Sering Diajukan</h2>
+    </div>
+    <div class="faq-list" id="faq-list-container">
+    <div class="faq-item reveal">
+      <div class="faq-q">Jam berapa check-in dan check-out?</div>
+      <div class="faq-a"><p>Check-in standar mulai siang hari, dan check-out di akhir pagi. Waktu pastinya bisa dikonfirmasi saat booking.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q">Apakah sarapan termasuk?</div>
+      <div class="faq-a"><p>Tergantung tarif yang dipesan. Silakan tanya langsung ke kami untuk konfirmasi apa yang termasuk di tanggal kakak.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q">Bagaimana kebijakan pembatalan?</div>
+      <div class="faq-a"><p>Ketentuan pembatalan berbeda tergantung platform booking dan jenis tarif. Cek konfirmasi booking kakak atau tanya langsung ke kami.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q">Apakah ada layanan antar-jemput dari bandara?</div>
+      <div class="faq-a"><p>Silakan hubungi kami langsung untuk menanyakan opsi antar-jemput.</p></div>
+    </div>
+    </div>
+    <p class="faq-note">* Pertanyaan ini bersifat sementara — akan diganti dengan FAQ asli dari listing Booking.com kami setelah tersedia.</p>
+  </div>
+</section>
+
+<section class="cta-band reveal" id="contact">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--gold-soft); justify-content:center">Hubungi Kami</span>
+    <h2 style="margin-top:14px; color:var(--marble)">Siap untuk ketenangan?</h2>
+    <p class="lede" style="margin-left:auto;margin-right:auto;">Kirim pesan langsung untuk cek ketersediaan atau tanya apa saja soal villa.</p>
+    <div class="wa-row">
+      <a href="https://wa.me/6282114678168" class="btn btn-gold">WhatsApp — 0821-1467-8168</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand" style="margin-bottom:14px;"><img src="../../assets/logo-villa.jpg" alt="INNerpeace Villa" style="width:42px;border-radius:9px;"></div>
+      <p style="max-width:32ch;">Villa privat di tengah sawah Celuk, Sukawati — bagian dari keluarga INNerpeace.</p>
+    </div>
+    <div>
+      <h4>Alamat</h4>
+      <p>Jl. Teratai No.168A, Celuk,<br>Sukawati, Gianyar, Bali 80582</p>
+    </div>
+    <div>
+      <h4>Kontak</h4>
+      <p><a href="https://wa.me/6282114678168">WhatsApp: 0821-1467-8168</a><br><a href="https://www.instagram.com/innerpeace.villa.bali/" target="_blank" rel="noopener">@innerpeace.villa.bali</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 INNerpeace Villa.</span>
+    <span class="powered-by">Powered by <a href="https://anabhidev.netlify.app" target="_blank" rel="noopener">Anabhi Dev</a></span>
+  </div>
+</footer>
+
+<div class="sticky-bottom-nav">
+  <a href="https://wa.me/6282114678168" class="sbn-btn sbn-wa">WhatsApp</a>
+  <a href="#types" class="sbn-btn sbn-rooms">Tipe Villa</a>
+</div>
+
+<script>
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function(){ navToggle.classList.toggle('open'); navLinks.classList.toggle('open'); });
+  document.querySelectorAll('#navLinks a').forEach(function(a){ a.addEventListener('click', function(){ navToggle.classList.remove('open'); navLinks.classList.remove('open'); }); });
+
+  // Stagger: each group's children animate one after another, not all at once
+  ['.facts-grid', '.rating-grid', '.type-grid', '.gallery-grid', '.faq-list'].forEach(function(sel){
+    document.querySelectorAll(sel).forEach(function(group){
+      var items = group.querySelectorAll('.reveal');
+      items.forEach(function(item, i){ item.style.transitionDelay = (i * 100) + 'ms'; });
+    });
+  });
+
+  var els = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  els.forEach(function(el){ io.observe(el); });
+
+  function bindFaqClicks(){
+    document.querySelectorAll('.faq-q').forEach(function(q){
+      q.addEventListener('click', function(){
+        var item = q.parentElement;
+        var a = item.querySelector('.faq-a');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(function(o){ o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight = null; });
+        if(!isOpen){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+      });
+    });
+  }
+  bindFaqClicks();
+
+  // Load editable content from data/villa.json (set up via the CMS at /admin).
+  // Reads the _id-suffixed fields (faq_id, price.unit_id / disclaimer_id) added for this Indonesian mirror.
+  // If this fails, the static Indonesian FAQ/price text already in this HTML stays as-is.
+  fetch('../../data/villa.json').then(function(r){ return r.json(); }).then(function(data){
+    var faqId = (data.faq_id && data.faq_id.length) ? data.faq_id : data.faq;
+    if(faqId && faqId.length){
+      var container = document.getElementById('faq-list-container');
+      container.innerHTML = faqId.map(function(item){
+        return '<div class="faq-item"><div class="faq-q">' + item.q + '</div><div class="faq-a"><p>' + item.a + '</p></div></div>';
+      }).join('');
+      bindFaqClicks();
+    }
+    if(data.price){
+      var pd = document.getElementById('price-disclaimer');
+      var unitId = data.price.unit_id || data.price.unit;
+      var disclaimerId = data.price.disclaimer_id || data.price.disclaimer;
+      if(pd) pd.textContent = 'Mulai dari ' + data.price.amount + unitId + '* — *' + disclaimerId;
+    }
+  }).catch(function(err){ console.warn('Could not load data/villa.json, showing static fallback content', err); });
+</script>
+
+</body>
+</html>
