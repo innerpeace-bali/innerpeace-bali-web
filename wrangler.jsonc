@@ -1,0 +1,10 @@
+// FILE: wrangler.jsonc — taruh di ROOT folder (sejajar dengan index.html, villa/, residence/, dll)
+// Ini memberitahu Cloudflare Workers bahwa proyek ini cuma kumpulan file statis (HTML/CSS/JS),
+// tanpa Worker script (tidak ada "main" karena tidak ada kode server-side yang dijalankan).
+{
+  "name": "innerpeace-bali-web",
+  "compatibility_date": "2026-06-26",
+  "assets": {
+    "directory": "./"
+  }
+}
