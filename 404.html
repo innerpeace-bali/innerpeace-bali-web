@@ -1,0 +1,61 @@
+<!-- FILE: 404.html — taruh di ROOT folder (sejajar dengan index.html) -->
+<!-- Supaya dipakai Cloudflare Workers, wrangler.jsonc perlu ditambah "not_found_handling": "404-page" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found | INNerpeace Bali</title>
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F3E8D9; --cocoa:#4A2F22; --cocoa-soft:#6B4A33; --marble:#FAF7F2;
+    --gold:#B8924F; --gold-soft:#D8BD86; --line: rgba(74,47,34,0.14);
+    --display: "Playfair Display", Georgia, serif;
+    --display-hero: "Cormorant Garamond", Georgia, serif;
+    --body: "Work Sans", Arial, sans-serif;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; min-height:100vh; background:var(--cream); color:var(--cocoa);
+    font-family:var(--body); line-height:1.65; -webkit-font-smoothing:antialiased;
+    display:flex; align-items:center; justify-content:center; padding:40px 24px;
+  }
+  .wrap{ max-width:560px; text-align:center; }
+  .wordmark{ font-family:var(--display); font-style:italic; font-weight:600; font-size:1.3rem; display:block; margin-bottom:36px; color:var(--cocoa-soft); text-decoration:none; }
+  .code{ font-family:var(--display-hero); font-size:clamp(4rem,12vw,6.5rem); color:var(--gold); line-height:1; margin-bottom:10px; }
+  h1{ font-family:var(--display); font-weight:600; font-size:clamp(1.5rem,4vw,2rem); margin:0 0 14px; color:var(--cocoa); }
+  p{ color:var(--cocoa-soft); font-size:1rem; margin:0 0 8px; }
+  .id-text{ font-style:italic; color:var(--cocoa-soft); font-size:0.92rem; margin-bottom:28px; }
+  .rule{ width:1px; height:34px; background:var(--gold); margin:26px auto; }
+  .links{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:6px; }
+  a.btn{
+    display:inline-flex; align-items:center; gap:8px; padding:12px 22px;
+    font-family:var(--body); font-weight:600; font-size:0.86rem; border-radius:2px;
+    text-decoration:none; border:1px solid var(--cocoa); color:var(--cocoa); transition:all .2s ease;
+  }
+  a.btn:hover{ background:var(--cocoa); color:var(--marble); }
+  a.btn.primary{ background:var(--gold); color:var(--marble); border-color:var(--gold); }
+  a.btn.primary:hover{ background:var(--gold-soft); border-color:var(--gold-soft); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a href="/" class="wordmark">INNerpeace Bali</a>
+    <div class="code">404</div>
+    <h1>This page has wandered off.</h1>
+    <p>The page you're looking for doesn't exist — it may have been moved, or the link might be outdated.</p>
+    <p class="id-text">Halaman yang kamu cari tidak ditemukan — mungkin sudah dipindahkan, atau link-nya sudah tidak berlaku.</p>
+    <div class="rule"></div>
+    <div class="links">
+      <a href="/" class="btn primary">Home (EN)</a>
+      <a href="/id/" class="btn primary">Beranda (ID)</a>
+      <a href="/villa/" class="btn">Villa</a>
+      <a href="/residence/" class="btn">Residence</a>
+    </div>
+  </div>
+</body>
+</html>

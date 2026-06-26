@@ -1,0 +1,7 @@
+# FILE: robots.txt — taruh di ROOT folder (sejajar dengan index.html)
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://www.innerpeacebali.com/sitemap.xml

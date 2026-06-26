@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- FILE: sitemap.xml — taruh di ROOT folder (sejajar dengan index.html) -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://www.innerpeacebali.com/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/"/>
+  </url>
+
+  <url>
+    <loc>https://www.innerpeacebali.com/id/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/"/>
+  </url>
+
+  <url>
+    <loc>https://www.innerpeacebali.com/villa/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/villa/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/villa/"/>
+  </url>
+
+  <url>
+    <loc>https://www.innerpeacebali.com/id/villa/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/villa/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/villa/"/>
+  </url>
+
+  <url>
+    <loc>https://www.innerpeacebali.com/villa/facilities.html</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/villa/facilities.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/villa/facilities.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.innerpeacebali.com/id/villa/facilities.html</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/villa/facilities.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/villa/facilities.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.innerpeacebali.com/villa/contact.html</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/villa/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/villa/contact.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.innerpeacebali.com/id/villa/contact.html</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/villa/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/villa/contact.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.innerpeacebali.com/residence/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/residence/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/residence/"/>
+  </url>
+
+  <url>
+    <loc>https://www.innerpeacebali.com/id/residence/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/residence/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/residence/"/>
+  </url>
+
+  <url>
+    <loc>https://www.innerpeacebali.com/residence/contact.html</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/residence/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/residence/contact.html"/>
+  </url>
+
+  <url>
+    <loc>https://www.innerpeacebali.com/id/residence/contact.html</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.innerpeacebali.com/residence/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.innerpeacebali.com/id/residence/contact.html"/>
+  </url>
+
+</urlset>

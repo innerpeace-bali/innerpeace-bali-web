@@ -1,0 +1,9 @@
+# FILE: _headers — taruh di ROOT folder (sejajar dengan index.html dan wrangler.jsonc)
+# Format: baris path diikuti baris header (diawali 2 spasi).
+# Didukung native oleh Cloudflare Workers Static Assets, tidak perlu Worker script tambahan.
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
