@@ -1,18 +1,14 @@
 # FILE: admin/config.yml — place inside the `admin/` folder at site root
 #
-# ⚠️ NOT YET FUNCTIONAL — this file references a GitHub repo that does not exist yet.
-# Before this CMS can actually be used to log in and save changes, you need to:
-#   1. Create the GitHub repo and push this site's files into it
-#   2. Replace YOUR-GITHUB-USERNAME/innerpeace-bali below with the real repo path
-#   3. Set up the Cloudflare Worker that handles GitHub OAuth login (separate task,
-#      not done yet — Decap CMS needs this to let you log in with your GitHub account)
-# Until those 3 things are done, opening admin/index.html will show an error, not a login screen.
+# UPDATE NOTE: repo path & base_url sudah diisi dengan nilai asli.
+# Pastikan Authorization callback URL di GitHub OAuth App sudah disamakan ke:
+#   https://sveltia-cms-auth.innerpeacebali-web.workers.dev/callback
 
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/innerpeace-bali   # TODO: replace with the real repo
+  repo: innerpeace-bali/innerpeace-bali-web
   branch: main
-  base_url: https://your-oauth-worker.workers.dev   # TODO: replace once the Cloudflare Worker exists
+  base_url: https://sveltia-cms-auth.innerpeacebali-web.workers.dev
   auth_endpoint: auth
 
 media_folder: "assets/uploads"
