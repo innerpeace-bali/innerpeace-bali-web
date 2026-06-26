@@ -1,0 +1,4 @@
+# FILE: .assetsignore — taruh di ROOT folder (sejajar dengan wrangler.jsonc dan index.html)
+# Format sama seperti .gitignore — baris di bawah ini dikecualikan dari upload static assets.
+.git
+.git/**
