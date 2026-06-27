@@ -6,28 +6,54 @@
   },
   "units": 8,
   "facilities": [
-    "Air conditioning",
+    "Indoor kitchen & kitchen set",
+    "Induction stove",
+    "Single-door fridge",
+    "Daikin 1PK air conditioning",
+    "Serta mattress (180x200) with 2 head pillows & 2 bolster pillows",
+    "Large wardrobe",
+    "Fully furnished terrace with chairs & table",
     "Ensuite bathroom",
-    "King Koil mattress",
-    "Built-in wardrobe",
-    "Private small terrace",
-    "Mini-fridge",
+    "Ariston water heater (30L)",
+    "32-inch SmartTV",
     "Free WiFi",
-    "Car parking on-site"
+    "CCTV",
+    "Smart lock gate",
+    "Spacious yard / parking area",
+    "Dedicated laundry drying area at the back",
+    "Free waste & environmental fees"
   ],
   "facilities_id": [
-    "AC",
+    "Dapur dalam & kitchen set",
+    "Kompor induksi",
+    "Kulkas 1 pintu",
+    "AC Daikin 1PK",
+    "Kasur Serta (180x200) dengan 2 bantal kepala & 2 bantal guling",
+    "Lemari besar",
+    "Teras lengkap dengan kursi & meja",
     "Kamar mandi dalam",
-    "Kasur King Koil",
-    "Lemari pakaian built-in",
-    "Teras privat kecil",
-    "Kulkas mini",
+    "Water heater Ariston (30L)",
+    "SmartTV 32 inch",
     "WiFi gratis",
-    "Parkir mobil di lokasi"
+    "CCTV",
+    "Gerbang smart lock",
+    "Halaman/parkiran luas",
+    "Tempat jemuran khusus di area belakang",
+    "Gratis iuran sampah & lingkungan"
+  ],
+  "policy": "Suitable for families — pets are not allowed.",
+  "policy_id": "Kost bisa untuk keluarga, dilarang bawa peliharaan.",
+  "location_note": "Close to the main road — the access road is wide enough for two cars to pass each other.",
+  "location_note_id": "Dekat jalan utama — jalan akses cukup lebar untuk dua mobil papasan.",
+  "distances": [
+    { "place": "East Denpasar", "place_id": "Denpasar Timur", "value": "± 7.6 km / 18 min by motorbike" , "value_id": "± 7,6 km / 18 menit naik motor" },
+    { "place": "Ubud", "place_id": "Ubud", "value": "± 12 km / 27 min", "value_id": "± 12 km / 27 menit" },
+    { "place": "Sanur", "place_id": "Sanur", "value": "± 14 km / 29 min by motorbike", "value_id": "± 14 km / 29 menit naik motor" }
   ],
   "contact": {
     "whatsapp": "0851-9084-5076",
     "whatsapp_link": "6285190845076",
-    "address": "Jl. Subak Mungkul No.3, Celuk, Sukawati, Gianyar, Bali 80582"
+    "address": "Jl. Subak Mungkul No.3, Celuk, Sukawati, Gianyar, Bali 80582",
+    "email": "innerpeacebali@gmail.com"
   }
 }
