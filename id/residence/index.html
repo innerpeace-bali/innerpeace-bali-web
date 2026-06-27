@@ -1,7 +1,9 @@
 <!-- FILE: id/residence/index.html — KETERANGAN: INI VERSI BAHASA INDONESIA (mirror dari residence/index.html versi EN) -->
 <!-- Taruh file ini di dalam folder id/residence/ (jadi: id/residence/index.html) -->
 <!-- Asset (gambar, favicon) TIDAK diduplikasi — tetap ambil dari root, makanya path-nya pakai ../../ -->
-<!-- UPDATE NOTE: disamakan dengan update foto baru di versi EN (hero/og:image gate-sign, mini-gallery 4 foto, Kulkas mini). -->
+<!-- UPDATE NOTE: keeps EN<->ID switcher + hreflang + GEO/JSON-LD (LodgingBusiness) added earlier.
+     PLUS: full facilities list revision (16 items), new Lokasi section, family/pet policy note,
+     footer icon+links (WhatsApp/Email), meta description (King Koil -> Serta, AC Daikin). -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -9,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>INNerpeace Residence | Kamar Bulanan untuk Profesional — Celuk, Gianyar</title>
-<meta name="description" content="INNerpeace Residence — 8 kamar bulanan untuk para profesional di Celuk, Sukawati, Gianyar, Bali. AC, kamar mandi dalam, parkir, kasur King Koil. Less Noise, More Peace.">
+<meta name="description" content="INNerpeace Residence — 8 kamar bulanan untuk para profesional di Celuk, Sukawati, Gianyar, Bali. AC Daikin, kamar mandi dalam, parkir, kasur Serta. Less Noise, More Peace.">
 <meta name="keywords" content="INNerpeace Residence, kos bulanan Gianyar, monthly residence Bali, kos profesional Sukawati, kos AC kamar mandi dalam Celuk">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.innerpeacebali.com/id/residence/">
@@ -112,8 +114,19 @@
   .facil-list{ list-style:none; margin:18px 0 22px; padding:0; display:flex; flex-direction:column; gap:9px; }
   .facil-list li{ font-size:0.92rem; color:var(--cocoa-soft); }
   .facil-list li::before{ content:"— "; color:var(--gold); }
+  .policy-note{ font-size:0.84rem; color:var(--cocoa-soft); font-style:italic; margin-top:16px; padding-top:14px; border-top:1px solid var(--line); }
   .mini-gallery{ display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:18px; }
   .mini-gallery img{ aspect-ratio:1/1; object-fit:cover; border-radius:2px; }
+
+  /* location band */
+  .location-band{ background:var(--cocoa); color:var(--marble); }
+  .location-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:50px; align-items:start; }
+  .location-address p{ color:rgba(250,247,242,0.85); font-size:0.98rem; margin-bottom:16px; }
+  .location-note{ font-size:0.85rem; color:rgba(250,247,242,0.6); font-style:italic; }
+  .distance-grid{ display:flex; flex-direction:column; gap:1px; background:rgba(250,247,242,0.12); }
+  .distance-cell{ padding:16px 4px; display:flex; justify-content:space-between; align-items:baseline; gap:14px; }
+  .distance-place{ font-family:var(--display); font-size:1rem; color:var(--gold-soft); }
+  .distance-value{ font-size:0.85rem; color:rgba(250,247,242,0.75); text-align:right; }
 
   /* why grid */
   .why-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:36px; }
@@ -130,6 +143,9 @@
   .footer-grid h4{ color:var(--marble); font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 14px; }
   .footer-grid p{ font-size:0.85rem; }
   .footer-grid a{ font-size:0.88rem; }
+  .footer-contact-row{ display:flex; align-items:center; gap:9px; margin-bottom:9px; }
+  .footer-contact-row:last-child{ margin-bottom:0; }
+  .footer-contact-row svg{ width:15px; height:15px; flex-shrink:0; color:var(--gold-soft); }
   .footer-bottom{ display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:22px; padding-bottom:22px; font-size:0.78rem; gap:6px; }
   .footer-bottom .powered-by{ font-size:0.74rem; opacity:0.7; }
   .footer-bottom .powered-by a{ color:var(--gold-soft); text-decoration:underline; }
@@ -143,6 +159,7 @@
     .facts-grid{ grid-template-columns:repeat(2,1fr); }
     .room-showcase{ grid-template-columns:1fr; }
     .room-showcase img{ min-height:240px; }
+    .location-grid{ grid-template-columns:1fr; gap:30px; }
     .why-grid{ grid-template-columns:repeat(2,1fr); gap:28px; }
     .footer-grid{ grid-template-columns:1fr; }
     .nav-toggle{ display:block; }
@@ -155,6 +172,55 @@
   }
   @media (prefers-reduced-motion:reduce){ .reveal{ opacity:1; transform:none; transition:none; } }
 </style>
+
+<!-- ============ GEO / Schema.org (JSON-LD) ============ -->
+<!-- Fallback statis di bawah ini — JS di akhir <body> akan menimpa nilai price/amenityFeature
+     dari data/residence.json kalau berhasil di-fetch, supaya tetap sinkron dengan CMS. -->
+<script type="application/ld+json" id="ld-lodgingbusiness">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "INNerpeace Residence",
+  "description": "8 kamar bulanan untuk para profesional di Celuk, Sukawati, Gianyar, Bali.",
+  "url": "https://www.innerpeacebali.com/id/residence/",
+  "telephone": "+6285190845076",
+  "image": "https://www.innerpeacebali.com/assets/residence/residence-gate-sign-1.webp",
+  "numberOfRooms": 8,
+  "inLanguage": "id",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jl. Subak Mungkul No.3",
+    "addressLocality": "Celuk, Sukawati",
+    "addressRegion": "Gianyar, Bali",
+    "postalCode": "80582",
+    "addressCountry": "ID"
+  },
+  "priceRange": "Rp 3.000.000/bulan",
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Dapur dalam & kitchen set", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Kompor induksi", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Kulkas 1 pintu", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "AC Daikin 1PK", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Kasur Serta (180x200) dengan 2 bantal kepala & 2 bantal guling", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Lemari besar", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Teras lengkap dengan kursi & meja", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Kamar mandi dalam", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Water heater Ariston (30L)", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "SmartTV 32 inch", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "WiFi gratis", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "CCTV", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Gerbang smart lock", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Halaman/parkiran luas", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Tempat jemuran khusus di area belakang", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Gratis iuran sampah & lingkungan", "value": true }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5"
+  }
+}
+</script>
 </head>
 <body>
 
@@ -214,21 +280,50 @@
         <div class="price"><span id="res-price-amount">Rp 3,000,000</span> <span id="res-price-unit">/ bulan</span></div>
         <p class="lede" style="margin-top:6px;">8 kamar yang identik — harga sama, fasilitas sama.</p>
         <ul class="facil-list" id="res-facilities">
-          <li>AC</li>
+          <li>Dapur dalam &amp; kitchen set</li>
+          <li>Kompor induksi</li>
+          <li>Kulkas 1 pintu</li>
+          <li>AC Daikin 1PK</li>
+          <li>Kasur Serta (180x200) dengan 2 bantal kepala &amp; 2 bantal guling</li>
+          <li>Lemari besar</li>
+          <li>Teras lengkap dengan kursi &amp; meja</li>
           <li>Kamar mandi dalam</li>
-          <li>Kasur King Koil</li>
-          <li>Lemari pakaian built-in</li>
-          <li>Teras privat kecil</li>
-          <li>Kulkas mini</li>
+          <li>Water heater Ariston (30L)</li>
+          <li>SmartTV 32 inch</li>
           <li>WiFi gratis</li>
-          <li>Parkir mobil di lokasi</li>
+          <li>CCTV</li>
+          <li>Gerbang smart lock</li>
+          <li>Halaman/parkiran luas</li>
+          <li>Tempat jemuran khusus di area belakang</li>
+          <li>Gratis iuran sampah &amp; lingkungan</li>
         </ul>
+        <p class="policy-note" id="res-policy">Kost bisa untuk keluarga, dilarang bawa peliharaan.</p>
         <div class="mini-gallery">
           <img src="../../assets/residence/residence-wardrobe-1.webp" alt="Built-in wardrobe">
           <img src="../../assets/residence/residence-exterior-night-1.webp" alt="Residence exterior at night">
           <img src="../../assets/residence/residence-bathroom-1.webp" alt="Residence ensuite bathroom">
           <img src="../../assets/residence/residence-terrace-1.webp" alt="Residence private terrace">
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="location-band reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="color:var(--gold-soft); justify-content:center">Lokasi</span>
+      <h2 style="margin-top:14px; color:var(--marble)">Dekat ke mana-mana, jauh dari keramaian.</h2>
+    </div>
+    <div class="location-grid">
+      <div class="location-address">
+        <p id="res-address">Jl. Subak Mungkul No.3, Celuk, Sukawati, Gianyar, Bali</p>
+        <p class="location-note" id="res-location-note">Dekat jalan utama — jalan akses cukup lebar untuk dua mobil papasan.</p>
+      </div>
+      <div class="distance-grid" id="res-distances">
+        <div class="distance-cell"><span class="distance-place">Denpasar Timur</span><span class="distance-value">± 7,6 km / 18 menit naik motor</span></div>
+        <div class="distance-cell"><span class="distance-place">Ubud</span><span class="distance-value">± 12 km / 27 menit</span></div>
+        <div class="distance-cell"><span class="distance-place">Sanur</span><span class="distance-value">± 14 km / 29 menit naik motor</span></div>
       </div>
     </div>
   </div>
@@ -282,7 +377,8 @@
     </div>
     <div>
       <h4>Kontak</h4>
-      <p><a href="https://wa.me/6285190845076">WhatsApp: 0851-9084-5076</a></p>
+      <div class="footer-contact-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 17.93c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.07 8.07 0 0 1-1.24-4.15c0-4.46 3.63-8.09 8.09-8.09 4.46 0 8.09 3.63 8.09 8.09-.01 4.46-3.64 8.02-8.09 8.02z"/></svg><a href="https://wa.me/6285190845076">WhatsApp: 0851-9084-5076</a></div>
+      <div class="footer-contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7L12 13L21 7"/></svg><a href="mailto:innerpeacebali@gmail.com">innerpeacebali@gmail.com</a></div>
     </div>
   </div>
   <div class="wrap footer-bottom">
@@ -330,6 +426,38 @@
       var el = document.getElementById('res-facilities');
       if(el) el.innerHTML = facilitiesId.map(function(i){ return '<li>' + i + '</li>'; }).join('');
     }
+    if(data.policy_id || data.policy){
+      var pn = document.getElementById('res-policy');
+      if(pn) pn.textContent = data.policy_id || data.policy;
+    }
+    if(data.contact && data.contact.address){
+      setText('res-address', data.contact.address.replace(/\s*\d{5}$/, ''));
+    }
+    if(data.location_note_id || data.location_note){
+      var ln = document.getElementById('res-location-note');
+      if(ln) ln.textContent = data.location_note_id || data.location_note;
+    }
+    if(data.distances && data.distances.length){
+      var dg = document.getElementById('res-distances');
+      if(dg) dg.innerHTML = data.distances.map(function(d){
+        return '<div class="distance-cell"><span class="distance-place">' + (d.place_id || d.place) + '</span><span class="distance-value">' + (d.value_id || d.value) + '</span></div>';
+      }).join('');
+    }
+
+    // Keep GEO/Schema.org JSON-LD in sync with the same data, so it doesn't drift
+    // out of date when price/facilities are edited later via the CMS.
+    try{
+      var lbEl = document.getElementById('ld-lodgingbusiness');
+      if(lbEl){
+        var lb = JSON.parse(lbEl.textContent);
+        if(data.price) lb.priceRange = data.price.amount + (data.price.unit_id || data.price.unit);
+        if(data.units) lb.numberOfRooms = data.units;
+        if(facilitiesId && facilitiesId.length){
+          lb.amenityFeature = facilitiesId.map(function(f){ return { "@type": "LocationFeatureSpecification", "name": f, "value": true }; });
+        }
+        lbEl.textContent = JSON.stringify(lb);
+      }
+    }catch(schemaErr){ console.warn('Could not sync GEO/Schema.org JSON-LD', schemaErr); }
   }).catch(function(err){ console.warn('Could not load data/residence.json, showing static fallback content', err); });
 </script>
 
