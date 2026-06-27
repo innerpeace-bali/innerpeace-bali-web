@@ -1,6 +1,7 @@
 <!-- FILE: residence/index.html — place inside the `residence/` folder at site root -->
-<!-- UPDATE NOTE: merged version — keeps the EN<->ID language switcher + hreflang tags added earlier,
-     PLUS the new photo updates (gate-sign hero/og:image, 4-photo mini-gallery, Mini-fridge facility). -->
+<!-- UPDATE NOTE: keeps EN<->ID switcher + hreflang + GEO/JSON-LD (LodgingBusiness) added earlier.
+     PLUS: full facilities list revision (16 items), new Location section, family/pet policy note,
+     footer icon+links (WhatsApp/Email), meta description (King Koil -> Serta, Daikin AC). -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>INNerpeace Residence | Monthly Rooms for Professionals — Celuk, Gianyar</title>
-<meta name="description" content="INNerpeace Residence — 8 monthly rooms for working professionals in Celuk, Sukawati, Gianyar, Bali. AC, ensuite bathroom, parking, King Koil bed. Less Noise, More Peace.">
+<meta name="description" content="INNerpeace Residence — 8 monthly rooms for working professionals in Celuk, Sukawati, Gianyar, Bali. Daikin AC, ensuite bathroom, parking, Serta bed. Less Noise, More Peace.">
 <meta name="keywords" content="INNerpeace Residence, kos bulanan Gianyar, monthly residence Bali, kos profesional Sukawati, kos AC kamar mandi dalam Celuk">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.innerpeacebali.com/residence/">
@@ -111,8 +112,19 @@
   .facil-list{ list-style:none; margin:18px 0 22px; padding:0; display:flex; flex-direction:column; gap:9px; }
   .facil-list li{ font-size:0.92rem; color:var(--cocoa-soft); }
   .facil-list li::before{ content:"— "; color:var(--gold); }
+  .policy-note{ font-size:0.84rem; color:var(--cocoa-soft); font-style:italic; margin-top:16px; padding-top:14px; border-top:1px solid var(--line); }
   .mini-gallery{ display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:18px; }
   .mini-gallery img{ aspect-ratio:1/1; object-fit:cover; border-radius:2px; }
+
+  /* location band */
+  .location-band{ background:var(--cocoa); color:var(--marble); }
+  .location-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:50px; align-items:start; }
+  .location-address p{ color:rgba(250,247,242,0.85); font-size:0.98rem; margin-bottom:16px; }
+  .location-note{ font-size:0.85rem; color:rgba(250,247,242,0.6); font-style:italic; }
+  .distance-grid{ display:flex; flex-direction:column; gap:1px; background:rgba(250,247,242,0.12); }
+  .distance-cell{ padding:16px 4px; display:flex; justify-content:space-between; align-items:baseline; gap:14px; }
+  .distance-place{ font-family:var(--display); font-size:1rem; color:var(--gold-soft); }
+  .distance-value{ font-size:0.85rem; color:rgba(250,247,242,0.75); text-align:right; }
 
   /* why grid */
   .why-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:36px; }
@@ -129,6 +141,9 @@
   .footer-grid h4{ color:var(--marble); font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 14px; }
   .footer-grid p{ font-size:0.85rem; }
   .footer-grid a{ font-size:0.88rem; }
+  .footer-contact-row{ display:flex; align-items:center; gap:9px; margin-bottom:9px; }
+  .footer-contact-row:last-child{ margin-bottom:0; }
+  .footer-contact-row svg{ width:15px; height:15px; flex-shrink:0; color:var(--gold-soft); }
   .footer-bottom{ display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:22px; padding-bottom:22px; font-size:0.78rem; gap:6px; }
   .footer-bottom .powered-by{ font-size:0.74rem; opacity:0.7; }
   .footer-bottom .powered-by a{ color:var(--gold-soft); text-decoration:underline; }
@@ -142,6 +157,7 @@
     .facts-grid{ grid-template-columns:repeat(2,1fr); }
     .room-showcase{ grid-template-columns:1fr; }
     .room-showcase img{ min-height:240px; }
+    .location-grid{ grid-template-columns:1fr; gap:30px; }
     .why-grid{ grid-template-columns:repeat(2,1fr); gap:28px; }
     .footer-grid{ grid-template-columns:1fr; }
     .nav-toggle{ display:block; }
@@ -154,6 +170,54 @@
   }
   @media (prefers-reduced-motion:reduce){ .reveal{ opacity:1; transform:none; transition:none; } }
 </style>
+
+<!-- ============ GEO / Schema.org (JSON-LD) ============ -->
+<!-- Fallback statis di bawah ini — JS di akhir <body> akan menimpa nilai price/amenityFeature
+     dari data/residence.json kalau berhasil di-fetch, supaya tetap sinkron dengan CMS. -->
+<script type="application/ld+json" id="ld-lodgingbusiness">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "INNerpeace Residence",
+  "description": "8 monthly rooms for working professionals in Celuk, Sukawati, Gianyar, Bali.",
+  "url": "https://www.innerpeacebali.com/residence/",
+  "telephone": "+6285190845076",
+  "image": "https://www.innerpeacebali.com/assets/residence/residence-gate-sign-1.webp",
+  "numberOfRooms": 8,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jl. Subak Mungkul No.3",
+    "addressLocality": "Celuk, Sukawati",
+    "addressRegion": "Gianyar, Bali",
+    "postalCode": "80582",
+    "addressCountry": "ID"
+  },
+  "priceRange": "Rp 3,000,000/month",
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Indoor kitchen & kitchen set", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Induction stove", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Single-door fridge", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Daikin 1PK air conditioning", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Serta mattress (180x200) with 2 head pillows & 2 bolster pillows", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Large wardrobe", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Fully furnished terrace with chairs & table", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Ensuite bathroom", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Ariston water heater (30L)", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "32-inch SmartTV", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "CCTV", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Smart lock gate", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Spacious yard / parking area", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Dedicated laundry drying area at the back", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Free waste & environmental fees", "value": true }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5"
+  }
+}
+</script>
 </head>
 <body>
 
@@ -213,21 +277,50 @@
         <div class="price"><span id="res-price-amount">Rp 3,000,000</span> <span id="res-price-unit">/ month</span></div>
         <p class="lede" style="margin-top:6px;">8 identical rooms — same price, same facilities.</p>
         <ul class="facil-list" id="res-facilities">
-          <li>Air conditioning</li>
+          <li>Indoor kitchen &amp; kitchen set</li>
+          <li>Induction stove</li>
+          <li>Single-door fridge</li>
+          <li>Daikin 1PK air conditioning</li>
+          <li>Serta mattress (180x200) with 2 head pillows &amp; 2 bolster pillows</li>
+          <li>Large wardrobe</li>
+          <li>Fully furnished terrace with chairs &amp; table</li>
           <li>Ensuite bathroom</li>
-          <li>King Koil mattress</li>
-          <li>Built-in wardrobe</li>
-          <li>Private small terrace</li>
-          <li>Mini-fridge</li>
+          <li>Ariston water heater (30L)</li>
+          <li>32-inch SmartTV</li>
           <li>Free WiFi</li>
-          <li>Car parking on-site</li>
+          <li>CCTV</li>
+          <li>Smart lock gate</li>
+          <li>Spacious yard / parking area</li>
+          <li>Dedicated laundry drying area at the back</li>
+          <li>Free waste &amp; environmental fees</li>
         </ul>
+        <p class="policy-note" id="res-policy">Suitable for families — pets are not allowed.</p>
         <div class="mini-gallery">
           <img src="../assets/residence/residence-wardrobe-1.webp" alt="Built-in wardrobe">
           <img src="../assets/residence/residence-exterior-night-1.webp" alt="Residence exterior at night">
           <img src="../assets/residence/residence-bathroom-1.webp" alt="Residence ensuite bathroom">
           <img src="../assets/residence/residence-terrace-1.webp" alt="Residence private terrace">
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="location-band reveal">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="color:var(--gold-soft); justify-content:center">Location</span>
+      <h2 style="margin-top:14px; color:var(--marble)">Close to everything, away from the noise.</h2>
+    </div>
+    <div class="location-grid">
+      <div class="location-address">
+        <p id="res-address">Jl. Subak Mungkul No.3, Celuk, Sukawati, Gianyar, Bali</p>
+        <p class="location-note" id="res-location-note">Close to the main road — the access road is wide enough for two cars to pass each other.</p>
+      </div>
+      <div class="distance-grid" id="res-distances">
+        <div class="distance-cell"><span class="distance-place">East Denpasar</span><span class="distance-value">± 7.6 km / 18 min by motorbike</span></div>
+        <div class="distance-cell"><span class="distance-place">Ubud</span><span class="distance-value">± 12 km / 27 min</span></div>
+        <div class="distance-cell"><span class="distance-place">Sanur</span><span class="distance-value">± 14 km / 29 min by motorbike</span></div>
       </div>
     </div>
   </div>
@@ -281,7 +374,8 @@
     </div>
     <div>
       <h4>Contact</h4>
-      <p><a href="https://wa.me/6285190845076">WhatsApp: 0851-9084-5076</a></p>
+      <div class="footer-contact-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 17.93c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.07 8.07 0 0 1-1.24-4.15c0-4.46 3.63-8.09 8.09-8.09 4.46 0 8.09 3.63 8.09 8.09-.01 4.46-3.64 8.02-8.09 8.02z"/></svg><a href="https://wa.me/6285190845076">WhatsApp: 0851-9084-5076</a></div>
+      <div class="footer-contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7L12 13L21 7"/></svg><a href="mailto:innerpeacebali@gmail.com">innerpeacebali@gmail.com</a></div>
     </div>
   </div>
   <div class="wrap footer-bottom">
@@ -327,6 +421,38 @@
       var el = document.getElementById('res-facilities');
       if(el) el.innerHTML = data.facilities.map(function(i){ return '<li>' + i + '</li>'; }).join('');
     }
+    if(data.policy){
+      var pn = document.getElementById('res-policy');
+      if(pn) pn.textContent = data.policy;
+    }
+    if(data.contact && data.contact.address){
+      setText('res-address', data.contact.address.replace(/\s*\d{5}$/, ''));
+    }
+    if(data.location_note){
+      var ln = document.getElementById('res-location-note');
+      if(ln) ln.textContent = data.location_note;
+    }
+    if(data.distances && data.distances.length){
+      var dg = document.getElementById('res-distances');
+      if(dg) dg.innerHTML = data.distances.map(function(d){
+        return '<div class="distance-cell"><span class="distance-place">' + d.place + '</span><span class="distance-value">' + d.value + '</span></div>';
+      }).join('');
+    }
+
+    // Keep GEO/Schema.org JSON-LD in sync with the same data, so it doesn't drift
+    // out of date when price/facilities are edited later via the CMS.
+    try{
+      var lbEl = document.getElementById('ld-lodgingbusiness');
+      if(lbEl){
+        var lb = JSON.parse(lbEl.textContent);
+        if(data.price) lb.priceRange = data.price.amount + data.price.unit;
+        if(data.units) lb.numberOfRooms = data.units;
+        if(data.facilities && data.facilities.length){
+          lb.amenityFeature = data.facilities.map(function(f){ return { "@type": "LocationFeatureSpecification", "name": f, "value": true }; });
+        }
+        lbEl.textContent = JSON.stringify(lb);
+      }
+    }catch(schemaErr){ console.warn('Could not sync GEO/Schema.org JSON-LD', schemaErr); }
   }).catch(function(err){ console.warn('Could not load data/residence.json, showing static fallback content', err); });
 </script>
 
