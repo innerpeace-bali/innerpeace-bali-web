@@ -114,6 +114,9 @@
   .info-row span{ font-size:0.88rem; color:var(--cocoa-soft); }
   .map-slot{ background:var(--marble); border:1px dashed var(--sage); aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; color:var(--cocoa-soft); font-size:0.82rem; text-align:center; padding:20px; }
   .map-slot[hidden]{ display:none; }
+  .map-slot.map-live{ padding:0; border:1px solid var(--line); }
+  .map-slot iframe{ width:100%; height:100%; border:0; display:block; }
+  .map-link{ display:inline-block; margin-top:10px; font-size:0.85rem; color:var(--cocoa); text-decoration:underline; text-underline-offset:3px; }
 
   footer{ background:var(--cocoa); color:rgba(250,247,242,0.7); }
   .footer-grid{ display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:40px; padding-top:50px; padding-bottom:30px; border-bottom:1px solid rgba(250,247,242,0.15); }
@@ -196,8 +199,8 @@
         <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21C12 21 5 14.5 5 9.5C5 5.9 8 3 12 3C16 3 19 5.9 19 9.5C19 14.5 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg><div><b>Alamat</b><span>Jl. Subak Mungkul No.3, Celuk, Sukawati, Gianyar, Bali 80582</span></div></div>
         <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 4H9L11 9L8.5 10.5C9.5 12.5 11.5 14.5 13.5 15.5L15 13L20 15V19C20 20.1 19.1 21 18 21C10.3 20.5 4.5 14.7 4 7C4 5.9 4.9 4 5 4Z"/></svg><div><b>WhatsApp</b><span>0851-9084-5076</span></div></div>
       </div>
-      <!-- Peta disembunyikan sampai kode embed Google Maps asli tersedia (hapus atribut hidden setelah diganti) -->
-      <div class="map-slot" hidden>Tempat untuk embed Google Maps<br>(ganti blok ini dengan kode embed asli setelah tersedia)</div>
+      <div class="map-slot map-live"><iframe src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sINNerpeace+Residence,+Jl.+Subak+Mungkul+No.3,+Celuk,+Gianyar!6i16!3m1!1sid!5m1!1sid" title="Peta: INNerpeace Residence, Celuk, Gianyar" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      <a class="map-link" href="https://maps.app.goo.gl/ZEL53ihZr8E3XnqS6" target="_blank" rel="noopener">Buka di Google Maps &rarr;</a>
     </div>
 
   </div>
