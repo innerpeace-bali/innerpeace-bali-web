@@ -2,7 +2,7 @@
 # Format: baris path diikuti baris header (diawali 2 spasi).
 # Didukung native oleh Cloudflare Workers Static Assets, tidak perlu Worker script tambahan.
 # Version   : 1.1.1
-# Generated : 14 November 2026, 23:52:30
+# Generated : 14 November 2026, 23:48:13
 
 /*
   X-Content-Type-Options: nosniff
