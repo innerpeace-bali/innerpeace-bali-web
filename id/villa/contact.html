@@ -114,6 +114,9 @@
   .info-row span{ font-size:0.88rem; color:var(--cocoa-soft); }
   .map-slot{ background:var(--marble); border:1px dashed var(--sage); aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; color:var(--cocoa-soft); font-size:0.82rem; text-align:center; padding:20px; }
   .map-slot[hidden]{ display:none; }
+  .map-slot.map-live{ padding:0; border:1px solid var(--line); }
+  .map-slot iframe{ width:100%; height:100%; border:0; display:block; }
+  .map-link{ display:inline-block; margin-top:10px; font-size:0.85rem; color:var(--cocoa); text-decoration:underline; text-underline-offset:3px; }
   .social-row{ display:flex; gap:14px; margin-top:18px; }
   .social-row a{ width:38px; height:38px; display:flex; align-items:center; justify-content:center; border:1px solid var(--line); border-radius:50%; }
   .social-row svg{ width:17px; height:17px; }
@@ -209,8 +212,8 @@
         <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 4H9L11 9L8.5 10.5C9.5 12.5 11.5 14.5 13.5 15.5L15 13L20 15V19C20 20.1 19.1 21 18 21C10.3 20.5 4.5 14.7 4 7C4 5.9 4.9 4 5 4Z"/></svg><div><b>WhatsApp</b><span>0821-1467-8168</span></div></div>
         <div class="info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="0.8" fill="currentColor"/></svg><div><b>Instagram</b><span>@innerpeace.villa.bali</span></div></div>
       </div>
-      <!-- Peta disembunyikan sampai kode embed Google Maps asli tersedia (hapus atribut hidden setelah diganti) -->
-      <div class="map-slot" hidden>Tempat untuk embed Google Maps<br>(ganti blok ini dengan kode embed asli setelah tersedia)</div>
+      <div class="map-slot map-live"><iframe src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sINNerpeace+Bali,+Jl.+Teratai+No.168A,+Celuk,+Gianyar!6i16!3m1!1sid!5m1!1sid" title="Peta: INNerpeace Villa, Celuk, Gianyar" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      <a class="map-link" href="https://maps.app.goo.gl/LGQv3rvwiTD8UFoM6" target="_blank" rel="noopener">Buka di Google Maps &rarr;</a>
       <div class="social-row">
         <a href="https://www.instagram.com/innerpeace.villa.bali/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="0.8" fill="currentColor"/></svg></a>
         <a href="https://wa.me/6282114678168" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 17.93c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.07 8.07 0 0 1-1.24-4.15c0-4.46 3.63-8.09 8.09-8.09 4.46 0 8.09 3.63 8.09 8.09-.01 4.46-3.64 8.02-8.09 8.02z"/></svg></a>
