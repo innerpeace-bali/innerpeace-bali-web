@@ -1,0 +1,56 @@
+# GITIGNORE — INNerpeace Bali Website
+# Static HTML/CSS/JS · Cloudflare Workers Static Assets
+# IT Department · Miss Fish Bali
+# Version   : 1.1.1
+# Generated : 14 November 2026, 23:38:54
+#
+# GitHub hanya memuat berkas yang dibutuhkan untuk menjalankan website.
+# Berkas di bawah TETAP ADA di lokal, hanya tidak ikut di-upload.
+
+# Arsip & backup
+/archive/
+/arsip/
+*.bak
+*.backup
+
+# Dokumentasi kerja internal & log sesi
+STATUS.md
+Status.md
+CLAUDE.md
+activitylogs.md
+time-version-logs.md
+*DRAFT*.md
+*NOTES*.md
+*AUDIT*.md
+*PROMPT*.md
+
+# Skrip otomasi lokal (berisi konfigurasi akun lokal)
+*.bat
+*.cmd
+*.ps1
+tools/
+
+# Kredensial & environment
+.env
+.env.*
+*.pem
+*.key
+*API Key*
+*OAuth*.txt
+
+# Metadata editor, OS & plugin AI lokal
+.vscode/
+.idea/
+.claude/
+.remember/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependency, build & cache
+node_modules/
+.wrangler/
+dist/
+.cache/
+*.log
+*.tmp

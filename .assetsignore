@@ -1,4 +1,20 @@
 # FILE: .assetsignore — taruh di ROOT folder (sejajar dengan wrangler.jsonc dan index.html)
 # Format sama seperti .gitignore — baris di bawah ini dikecualikan dari upload static assets.
+# Version   : 1.1.1
+# Generated : 14 November 2026, 23:38:54
 .git
 .git/**
+
+# Berkas repo/konfigurasi — ada di GitHub, tapi tidak boleh bisa dibuka publik di website
+.gitignore
+.gitattributes
+README.md
+wrangler.jsonc
+
+# Lapisan pengaman kedua (seharusnya sudah tertahan .gitignore)
+*.bat
+*.md
+.remember/
+.claude/
+archive/
+arsip/

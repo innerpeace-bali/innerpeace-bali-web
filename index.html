@@ -6,6 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" as="image" href="assets/villa/villa-pool-exterior-1.webp" fetchpriority="high">
 
 <!-- ============ PRIMARY SEO ============ -->
 <title>INNerpeace Bali | Less Noise, More Peace — Villas &amp; Monthly Residence in Celuk, Gianyar</title>
@@ -21,7 +22,11 @@
 <meta property="og:site_name" content="INNerpeace Bali">
 <meta property="og:title" content="INNerpeace Bali | Less Noise, More Peace">
 <meta property="og:description" content="Private ricefield villas for short stays, and a quiet monthly residence for professionals — in Celuk, Sukawati, Gianyar, Bali.">
-<meta property="og:image" content="https://www.innerpeacebali.com/assets/villa/villa-pool-exterior-1.webp">
+<meta property="og:image" content="https://www.innerpeacebali.com/assets/og/og-villa.jpg?v=2">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="INNerpeace Villa — private pool villa among the ricefields of Celuk, Bali">
 <meta property="og:url" content="https://www.innerpeacebali.com/">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="id_ID">
@@ -30,7 +35,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="INNerpeace Bali | Less Noise, More Peace">
 <meta name="twitter:description" content="Private ricefield villas for short stays, and a quiet monthly residence for professionals — in Celuk, Sukawati, Gianyar, Bali.">
-<meta name="twitter:image" content="https://www.innerpeacebali.com/assets/villa/villa-pool-exterior-1.webp">
+<meta name="twitter:image" content="https://www.innerpeacebali.com/assets/og/og-villa.jpg?v=2">
 
 <!-- ============ FAVICON (cropped from the INNerpeace Villa wheat mark) ============ -->
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
@@ -39,7 +44,10 @@
 <meta name="theme-color" content="#4A2F22">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap"></noscript>
 <style>
   :root{
     --cream:#F3E8D9;
@@ -113,8 +121,8 @@
   .hero-inner .lede{ color:rgba(250,247,242,0.86); margin:18px auto 0; text-align:center; font-size:1.12rem; }
   .hero-ctas{ display:flex; gap:18px; justify-content:center; margin-top:38px; flex-wrap:wrap; }
   .btn{ display:inline-flex; align-items:center; gap:10px; padding:15px 30px; font-family:var(--body); font-weight:600; font-size:0.92rem; border-radius:2px; border:1px solid transparent; cursor:pointer; transition:all .2s ease; }
-  .btn-gold{ background:var(--gold); color:var(--marble); }
-  .btn-gold:hover{ background:var(--gold-soft); }
+  .btn-gold{ background:var(--gold-soft); color:var(--cocoa); }
+  .btn-gold:hover{ background:var(--gold); }
   .btn-outline{ border-color:rgba(250,247,242,0.55); color:var(--marble); }
   .btn-outline:hover{ background:var(--marble); color:var(--cocoa); }
   .scroll-hint{ position:absolute; bottom:26px; left:50%; transform:translateX(-50%); color:rgba(250,247,242,0.7); font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; z-index:2; }
@@ -176,10 +184,10 @@
   footer{ background:var(--cocoa); color:rgba(250,247,242,0.7); padding-top:0; }
   .footer-grid{ display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:40px; padding-top:50px; padding-bottom:30px; border-bottom:1px solid rgba(250,247,242,0.15); }
   .footer-grid img{ width:110px; margin-bottom:14px; }
-  .footer-grid h4{ color:var(--marble); font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 14px; }
+  .footer-grid h3{ color:var(--marble); font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase; margin:0 0 14px; }
   .footer-grid p{ font-size:0.85rem; }
   .footer-bottom{ display:flex; flex-direction:column; align-items:center; text-align:center; padding-top:22px; padding-bottom:22px; font-size:0.78rem; gap:6px; }
-  .footer-bottom .powered-by{ font-size:0.74rem; opacity:0.7; }
+  .footer-bottom .powered-by{ font-size:0.74rem; }
   .footer-bottom .powered-by a{ color:var(--gold-soft); text-decoration:underline; }
 
   @media (max-width:900px){
@@ -209,7 +217,7 @@
     box-shadow:0 -4px 16px rgba(74,47,34,0.14);
   }
   .sbn-btn{ flex:1; text-align:center; padding:15px 0; font-family:var(--body); font-weight:600; font-size:0.9rem; }
-  .sbn-villa{ background:var(--gold); color:var(--marble); }
+  .sbn-villa{ background:var(--gold-soft); color:var(--cocoa); }
   .sbn-residence{ background:var(--cocoa); color:var(--marble); }
   @media (prefers-reduced-motion:reduce){
     .reveal{ opacity:1; transform:none; transition:none; }
@@ -229,22 +237,40 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "INNerpeace Bali",
-  "alternateName": "INNerpeace",
-  "description": "Private ricefield villas for short stays and a quiet monthly residence for working professionals, in Celuk, Sukawati, Gianyar, Bali.",
-  "url": "https://www.innerpeacebali.com/",
-  "logo": "https://www.innerpeacebali.com/assets/logo-villa.jpg",
-  "image": "https://www.innerpeacebali.com/assets/villa/villa-pool-exterior-1.webp",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Celuk, Sukawati",
-    "addressRegion": "Gianyar, Bali",
-    "addressCountry": "ID"
-  },
-  "subOrganization": [
-    { "@type": "VacationRental", "name": "INNerpeace Villa", "url": "https://www.innerpeacebali.com/villa/" },
-    { "@type": "LodgingBusiness", "name": "INNerpeace Residence", "url": "https://www.innerpeacebali.com/residence/" }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.innerpeacebali.com/#website",
+      "name": "INNerpeace Bali",
+      "url": "https://www.innerpeacebali.com/",
+      "inLanguage": ["en", "id"],
+      "publisher": { "@id": "https://www.innerpeacebali.com/#organization" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.innerpeacebali.com/#organization",
+      "name": "INNerpeace Bali",
+      "alternateName": "INNerpeace",
+      "slogan": "Less Noise, More Peace.",
+      "description": "Private ricefield villas for short stays and a quiet monthly residence for working professionals, in Celuk, Sukawati, Gianyar, Bali.",
+      "url": "https://www.innerpeacebali.com/",
+      "logo": "https://www.innerpeacebali.com/assets/logo-villa.jpg",
+      "image": "https://www.innerpeacebali.com/assets/og/og-villa.jpg",
+      "email": "innerpeacebali@gmail.com",
+      "sameAs": ["https://www.instagram.com/innerpeace.villa.bali/"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Celuk, Sukawati",
+        "addressRegion": "Gianyar, Bali",
+        "postalCode": "80582",
+        "addressCountry": "ID"
+      },
+      "areaServed": "Celuk, Sukawati, Gianyar, Bali",
+      "subOrganization": [
+        { "@type": "VacationRental", "name": "INNerpeace Villa", "url": "https://www.innerpeacebali.com/villa/", "telephone": "+6282114678168", "address": { "@type": "PostalAddress", "streetAddress": "Jl. Teratai No.168A", "addressLocality": "Celuk, Sukawati", "addressRegion": "Gianyar, Bali", "postalCode": "80582", "addressCountry": "ID" } },
+        { "@type": "LodgingBusiness", "name": "INNerpeace Residence", "url": "https://www.innerpeacebali.com/residence/", "telephone": "+6285190845076", "address": { "@type": "PostalAddress", "streetAddress": "Jl. Subak Mungkul No.3", "addressLocality": "Celuk, Sukawati", "addressRegion": "Gianyar, Bali", "postalCode": "80582", "addressCountry": "ID" } }
+      ]
+    }
   ]
 }
 </script>
@@ -302,7 +328,7 @@
 
       <div class="prop-card reveal" id="villa">
         <img src="assets/villa/villa-pool-exterior-1.webp" alt="INNerpeace Villa">
-        <div class="prop-logo-wrap"><img class="prop-logo" src="assets/logo-villa.jpg" alt="INNerpeace Villa logo"></div>
+        <div class="prop-logo-wrap"><img class="prop-logo" src="assets/logo-villa.webp" alt="INNerpeace Villa logo" width="75" height="75"></div>
         <div class="prop-overlay">
           <p class="prop-decision">Short holiday in Bali? <strong>This is for you.</strong></p>
           <p class="prop-tag">Private ricefield villas for short stays — pool, ensuite bath, and total privacy.</p>
@@ -313,7 +339,7 @@
 
       <div class="prop-card reveal" id="residence">
         <img src="assets/residence/residence-exterior-night-1.webp" alt="INNerpeace Residence">
-        <div class="prop-logo-wrap"><img class="prop-logo" src="assets/logo-residence.jpg" alt="INNerpeace Residence logo"></div>
+        <div class="prop-logo-wrap"><img class="prop-logo" src="assets/logo-residence.webp" alt="INNerpeace Residence logo" width="75" height="75"></div>
         <div class="prop-overlay">
           <p class="prop-decision">Staying longer to work? <strong>This is for you.</strong></p>
           <p class="prop-tag">Monthly rooms for working professionals — quiet, secure, WFH-ready.</p>
@@ -379,12 +405,12 @@
       <h2 style="margin-top:16px">Gallery</h2>
     </div>
     <div class="gallery-grid">
-      <a href="#villa" class="gallery-item"><img src="assets/villa/villa-bedroom-teak-1.webp" alt="INNerpeace Villa bedroom"><span class="gallery-tag">Villa</span></a>
-      <a href="#villa" class="gallery-item"><img src="assets/villa/villa-bathroom-marble-1.webp" alt="INNerpeace Villa bathroom"><span class="gallery-tag">Villa</span></a>
-      <a href="#villa" class="gallery-item"><img src="assets/villa/villa-terrace-view-1.webp" alt="INNerpeace Villa terrace"><span class="gallery-tag">Villa</span></a>
-      <a href="#residence" class="gallery-item"><img src="assets/residence/residence-exterior-night-1.webp" alt="INNerpeace Residence exterior"><span class="gallery-tag">Residence</span></a>
-      <a href="#residence" class="gallery-item"><img src="assets/residence/residence-bedroom-1.webp" alt="INNerpeace Residence bedroom"><span class="gallery-tag">Residence</span></a>
-      <a href="#residence" class="gallery-item"><img src="assets/residence/residence-wardrobe-1.webp" alt="INNerpeace Residence wardrobe"><span class="gallery-tag">Residence</span></a>
+      <a href="#villa" class="gallery-item"><img loading="lazy" decoding="async" src="assets/villa/villa-bedroom-teak-1.webp" alt="INNerpeace Villa bedroom"><span class="gallery-tag">Villa</span></a>
+      <a href="#villa" class="gallery-item"><img loading="lazy" decoding="async" src="assets/villa/villa-bathroom-marble-1.webp" alt="INNerpeace Villa bathroom"><span class="gallery-tag">Villa</span></a>
+      <a href="#villa" class="gallery-item"><img loading="lazy" decoding="async" src="assets/villa/villa-terrace-view-1.webp" alt="INNerpeace Villa terrace"><span class="gallery-tag">Villa</span></a>
+      <a href="#residence" class="gallery-item"><img loading="lazy" decoding="async" src="assets/residence/residence-exterior-night-1.webp" alt="INNerpeace Residence exterior"><span class="gallery-tag">Residence</span></a>
+      <a href="#residence" class="gallery-item"><img loading="lazy" decoding="async" src="assets/residence/residence-bedroom-1.webp" alt="INNerpeace Residence bedroom"><span class="gallery-tag">Residence</span></a>
+      <a href="#residence" class="gallery-item"><img loading="lazy" decoding="async" src="assets/residence/residence-wardrobe-1.webp" alt="INNerpeace Residence wardrobe"><span class="gallery-tag">Residence</span></a>
     </div>
   </div>
 </section>
@@ -409,11 +435,11 @@
       <p style="margin-top:14px; max-width:32ch;">Two properties, one quiet standard — villas for stays, a residence for living.</p>
     </div>
     <div>
-      <h4>INNerpeace Villa</h4>
+      <h3>INNerpeace Villa</h3>
       <p>Jl. Teratai No.168A, Celuk,<br>Sukawati, Gianyar, Bali</p>
     </div>
     <div>
-      <h4>INNerpeace Residence</h4>
+      <h3>INNerpeace Residence</h3>
       <p>Jl. Subak Mungkul No.3, Celuk,<br>Sukawati, Gianyar, Bali</p>
     </div>
   </div>

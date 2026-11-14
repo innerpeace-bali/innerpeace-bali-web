@@ -1,9 +1,19 @@
 # FILE: _headers — taruh di ROOT folder (sejajar dengan index.html dan wrangler.jsonc)
 # Format: baris path diikuti baris header (diawali 2 spasi).
 # Didukung native oleh Cloudflare Workers Static Assets, tidak perlu Worker script tambahan.
+# Version   : 1.1.1
+# Generated : 14 November 2026, 23:52:30
 
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Gambar & logo: simpan di browser 7 hari, lalu cek ulang di latar belakang.
+# Nama file tidak di-hash, jadi sengaja TIDAK "immutable" — ganti foto = ganti nama / tambah ?v=
+/assets/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/favicon.ico
+  Cache-Control: public, max-age=604800
