@@ -63,6 +63,10 @@
     --body: "Work Sans", Arial, sans-serif;
   }
   *{ box-sizing:border-box; }
+  /* Scrollbar tipis warna brand — pola SOP v2.14 (scrollbar-width thin + thumb 5px radius 4px) */
+  html{ scrollbar-width:thin; scrollbar-color:var(--gold) transparent; }
+  html::-webkit-scrollbar{ width:5px; height:5px; }
+  html::-webkit-scrollbar-thumb{ background:var(--gold); border-radius:4px; }
   html{ scroll-behavior:smooth; }
   body{
     margin:0; background:var(--cream); color:var(--cocoa);
@@ -290,7 +294,7 @@
     </ul>
     <div class="nav-right">
       <div class="lang-pill"><span class="on">EN</span><a href="id/index.html"><span>ID</span></a></div>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
     </div>
   </nav>
 </header>
@@ -459,12 +463,12 @@
   var navToggle = document.getElementById('navToggle');
   var navLinks = document.getElementById('navLinks');
   navToggle.addEventListener('click', function(){
-    navToggle.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', navToggle.classList.toggle('open'));
     navLinks.classList.toggle('open');
   });
   document.querySelectorAll('#navLinks a').forEach(function(a){
     a.addEventListener('click', function(){
-      navToggle.classList.remove('open');
+      navToggle.classList.remove('open'); navToggle.setAttribute('aria-expanded','false');
       navLinks.classList.remove('open');
     });
   });

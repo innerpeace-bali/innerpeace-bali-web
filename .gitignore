@@ -43,6 +43,7 @@ tools/
 .idea/
 .claude/
 .remember/
+.playwright-mcp/
 .DS_Store
 Thumbs.db
 desktop.ini

@@ -51,6 +51,10 @@
     --body: "Work Sans", Arial, sans-serif;
   }
   *{ box-sizing:border-box; }
+  /* Scrollbar tipis warna brand — pola SOP v2.14 (scrollbar-width thin + thumb 5px radius 4px) */
+  html{ scrollbar-width:thin; scrollbar-color:var(--gold) transparent; }
+  html::-webkit-scrollbar{ width:5px; height:5px; }
+  html::-webkit-scrollbar-thumb{ background:var(--gold); border-radius:4px; }
   html{ scroll-behavior:smooth; }
   body{ margin:0; background:var(--cream); color:var(--cocoa); font-family:var(--body); line-height:1.65; -webkit-font-smoothing:antialiased; }
   img{ max-width:100%; display:block; }
@@ -165,7 +169,7 @@
 
   .sticky-bottom-nav{ display:none; position:fixed; bottom:0; left:0; right:0; z-index:60; background:var(--marble); border-top:1px solid var(--line); box-shadow:0 -4px 16px rgba(74,47,34,0.14); }
   .sbn-btn{ flex:1; text-align:center; padding:15px 0; font-family:var(--body); font-weight:600; font-size:0.9rem; }
-  .sbn-wa{ background:var(--gold); color:var(--marble); }
+  .sbn-wa{ background:var(--gold-soft); color:var(--cocoa); }
   .sbn-rooms{ background:var(--cocoa); color:var(--marble); }
 
   @media (max-width:900px){
@@ -254,7 +258,7 @@
     </ul>
     <div class="nav-right">
       <div class="lang-pill"><span class="on">EN</span><a href="../id/villa/index.html"><span>ID</span></a></div>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
     </div>
   </nav>
 </header>
@@ -418,8 +422,8 @@
 <script>
   var navToggle = document.getElementById('navToggle');
   var navLinks = document.getElementById('navLinks');
-  navToggle.addEventListener('click', function(){ navToggle.classList.toggle('open'); navLinks.classList.toggle('open'); });
-  document.querySelectorAll('#navLinks a').forEach(function(a){ a.addEventListener('click', function(){ navToggle.classList.remove('open'); navLinks.classList.remove('open'); }); });
+  navToggle.addEventListener('click', function(){ navToggle.setAttribute('aria-expanded', navToggle.classList.toggle('open')); navLinks.classList.toggle('open'); });
+  document.querySelectorAll('#navLinks a').forEach(function(a){ a.addEventListener('click', function(){ navToggle.classList.remove('open'); navToggle.setAttribute('aria-expanded','false'); navLinks.classList.remove('open'); }); });
 
   // Stagger: each group's children animate one after another, not all at once
   ['.facts-grid', '.rating-grid', '.type-grid', '.gallery-grid', '.faq-list'].forEach(function(sel){
