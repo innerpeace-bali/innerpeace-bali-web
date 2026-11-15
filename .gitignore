@@ -55,3 +55,6 @@ dist/
 .cache/
 *.log
 *.tmp
+
+# Hasil kerja video/gambar lokal (reels, render)
+/scratch/
